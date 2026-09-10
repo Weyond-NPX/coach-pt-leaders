@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{{site.nom}} — Les coachs</title>
+<meta name="theme-color" content="{{marque.papier}}">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232B44C7'/><path d='M26 62 L44 40 L56 52 L74 30' stroke='%23fff' stroke-width='11' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,700;12..96,75..100,800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --encre:{{marque.encre}};--encre-2:#5c5e66;--encre-3:#8b8d95;
+  --papier:{{marque.papier}};--sable:{{marque.sable}};
+  --accent:{{marque.accent}};--accent-clair:{{marque.accentClair}};
+  --filet:#ded8cd;--blanc:#fdfcfa;
+  --titre:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;
+  --texte:'Instrument Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papier);color:var(--encre);font-family:var(--texte);
+     font-size:16px;line-height:1.55;letter-spacing:-.003em;-webkit-font-smoothing:antialiased}
+.wrap{width:min(1000px,100% - 40px);margin-inline:auto}
+a{color:inherit}
+
+header{padding:52px 0 34px;border-bottom:1px solid var(--filet)}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;
+       color:var(--accent);background:var(--accent-clair);padding:6px 14px;border-radius:999px}
+h1{font-family:var(--titre);font-weight:800;letter-spacing:-.03em;line-height:1.02;
+   font-size:clamp(34px,5.4vw,52px);margin:18px 0 12px}
+.sous{color:var(--encre-2);max-width:56ch;margin:0}
+.compte{font-family:var(--titre);font-weight:800;color:var(--accent)}
+
+.outils{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:26px 0 0}
+input[type=search]{
+  flex:1 1 260px;min-width:0;font-family:var(--texte);font-size:16px;color:var(--encre);
+  background:var(--blanc);border:1px solid var(--filet);border-radius:999px;padding:12px 20px;
+}
+input[type=search]:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+input[type=search]::placeholder{color:var(--encre-3)}
+
+.liste{list-style:none;margin:0;padding:0;display:grid;gap:10px;padding-block:26px 60px}
+.ligne{background:var(--blanc);border-radius:18px;transition:transform .14s ease,box-shadow .14s ease}
+.ligne:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(23,24,28,.08)}
+.ligne a{display:grid;grid-template-columns:44px minmax(0,1.1fr) minmax(0,1fr) auto;
+         gap:20px;align-items:center;padding:18px 22px;text-decoration:none}
+.init{width:44px;height:44px;border-radius:50%;background:var(--sable);display:grid;place-items:center;
+      font-family:var(--titre);font-weight:800;font-size:16px;letter-spacing:-.02em}
+.nom{font-family:var(--titre);font-weight:800;font-size:19px;letter-spacing:-.025em;line-height:1.2}
+.ville{font-size:14px;color:var(--encre-2);margin-top:2px}
+.salle{font-size:14.5px;color:var(--encre-2);min-width:0;overflow-wrap:anywhere}
+.salle b{display:block;font-weight:600;color:var(--encre);font-size:15px}
+.chemin{font-size:14px;color:var(--encre-3);display:flex;align-items:center;gap:10px;white-space:nowrap}
+.fleche{width:30px;height:30px;border-radius:50%;background:var(--accent-clair);color:var(--accent);
+        display:grid;place-items:center;font-size:15px;flex:0 0 auto}
+.ligne.incomplet{border:1px solid #c3cbf2}
+.alerte{font-size:12px;font-weight:600;color:var(--accent);background:var(--accent-clair);
+        padding:3px 10px;border-radius:999px;white-space:nowrap}
+.vide{padding:40px 0;color:var(--encre-2);display:none}
+footer{border-top:1px solid var(--filet);padding:22px 0 40px;font-size:13.5px;color:var(--encre-3)}
+
+@media (max-width:760px){
+  .ligne a{grid-template-columns:44px 1fr;gap:14px 16px}
+  .salle{grid-column:2}
+  .chemin{grid-column:2;justify-content:flex-start}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="badge">Page interne · non indexée</span>
+    <h1>Les pages « Bilan Forme »</h1>
+    <p class="sous"><span class="compte">{{nbCoachs}}</span> coachs en ligne. Cliquez pour ouvrir une page, ou tapez un nom pour filtrer.</p>
+    <div class="outils">
+      <input type="search" id="filtre" placeholder="Filtrer par coach, ville ou salle…" autocomplete="off" aria-label="Filtrer la liste">
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <ul class="liste" id="liste">
+    {{#each coachs}}
+    <li class="ligne{{this.classeAlerte}}" data-cherche="{{this.recherche}}">
+      <a href="./{{this.slug}}/">
+        <span class="init" aria-hidden="true">{{this.initiales}}</span>
+        <span>
+          <span class="nom">{{this.nom}}</span>
+          <span class="ville">{{this.ville}}</span>
+        </span>
+        <span class="salle"><b>{{this.salleNom}}</b>{{this.salleVille}}</span>
+        <span class="chemin">
+          {{#if this.incomplet}}<span class="alerte">à compléter</span>{{/if}}
+          /{{this.slug}}
+          <span class="fleche" aria-hidden="true">→</span>
+        </span>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+  <p class="vide" id="vide">Aucun coach ne correspond.</p>
+</main>
+
+<footer>
+  <div class="wrap">Généré le {{dateGeneration}} · {{site.base}}</div>
+</footer>
+
+<script>
+var champ = document.getElementById('filtre');
+var lignes = Array.prototype.slice.call(document.querySelectorAll('#liste .ligne'));
+var vide = document.getElementById('vide');
+
+function sansAccent(s){
+  return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+champ.addEventListener('input', function () {
+  var q = sansAccent(champ.value.trim());
+  var visibles = 0;
+  lignes.forEach(function (l) {
+    var ok = !q || sansAccent(l.getAttribute('data-cherche')).indexOf(q) > -1;
+    l.hidden = !ok;
+    if (ok) visibles++;
+  });
+  vide.style.display = visibles ? 'none' : 'block';
+});
+
+// « / » met le focus dans le filtre
+document.addEventListener('keydown', function (e) {
+  if (e.key === '/' && document.activeElement !== champ) { e.preventDefault(); champ.focus(); }
+});
+</script>
+</body>
+</html>

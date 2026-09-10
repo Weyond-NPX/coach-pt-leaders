@@ -1,0 +1,13 @@
+{
+  "name": "coach-bilan-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Générateur de landing pages « Bilan Forme » — une page par coach, un JSON par coach.",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && node scripts/serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

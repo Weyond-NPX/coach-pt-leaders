@@ -1,0 +1,51 @@
+{
+  "_lisezmoi": "Config coach. Tout ce qui n'est pas ici est repris de _defaults.json.",
+  "coach": {
+    "prenom": "Thomas",
+    "nom": "Vaysse",
+    "ville": "Antibes"
+  },
+  "salle": {
+    "nom": "Basic-Fit",
+    "adresse": "560 All. des Terriers",
+    "codePostal": "06160",
+    "ville": "Antibes",
+    "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher."
+  },
+  "lieuxSupplementaires": [
+    {
+      "nom": "Basic-Fit Cannes Forville",
+      "adresse": "17 Rue du Marché Forville, 06150 Cannes"
+    }
+  ],
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/Y4n5PbhGpJmMCDw0kTP4"
+  },
+  "meta": {
+    "titre": "Bilan forme offert à Antibes — Thomas Vaysse, coach sportif",
+    "description": "Reprenez le sport sans bouleverser vos semaines. 1 h d'analyse et de mesures avec un coach sportif diplômé au Basic-Fit d'Antibes, puis un plan écrit. Ce n'est pas une séance de sport. 5 bilans offerts ce mois-ci."
+  },
+  "avis": {
+    "note": "",
+    "nombre": "",
+    "lienProfil": "",
+    "liste": []
+  },
+  "visuels": {
+    "hero": "assets/portrait thomas vaysse.png"
+  },
+  "_avis_mode_emploi": [
+    "Copier ici de VRAIS avis de la fiche Google du coach — jamais d'avis inventés.",
+    "Ouvrir la fiche Google Business → onglet Avis → copier texte, prénom, mois.",
+    "Format attendu, 3 à 5 entrées :",
+    {
+      "texte": "…",
+      "auteur": "Prénom L.",
+      "initiale": "P",
+      "date": "juillet 2026",
+      "note": "5"
+    },
+    "Renseigner aussi note (ex 4.9), nombre (ex 37) et lienProfil (URL de la fiche).",
+    "Ou lancer : GOOGLE_API_KEY=xxx node scripts/fetch-avis.js thomas-vaysse (voir README)."
+  ]
+}

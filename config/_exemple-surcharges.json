@@ -1,0 +1,125 @@
+{
+  "_lisezmoi": [
+    "Ce fichier n'est PAS généré (son nom commence par _). C'est un aide-mémoire.",
+    "Il montre tout ce qu'un coach peut redéfinir pour lui seul.",
+    "Règle : ce que vous écrivez ici écrase _defaults.json, uniquement pour ce coach.",
+    "Une liste (crochets []) est remplacée en entier — recopiez tous les éléments.",
+    "Un objet (accolades {}) est fusionné — vous ne mettez que les clés à changer."
+  ],
+  "coach": {
+    "prenom": "Prénom",
+    "nom": "Nom",
+    "ville": "Ville"
+  },
+  "salle": {
+    "nom": "Basic-Fit",
+    "adresse": "1 rue Exemple",
+    "codePostal": "00000",
+    "ville": "Ville"
+  },
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/ID"
+  },
+  "meta": {
+    "titre": "…",
+    "description": "…"
+  },
+  "_1_changer_le_copywriting": "Tout le texte de la page vit dans textes.*. On ne redéfinit QUE les clés à changer, le reste reste celui de _defaults.json. Les clés en -Html acceptent du HTML simple.",
+  "textes": {
+    "h1Html": "Se remettre au sport <span class=\"souligne\">après 40 ans</span>, sans se blesser.",
+    "ctaPrincipal": "Je réserve ma place",
+    "situationsTitre": "Votre corps a changé. Votre entraînement, non.",
+    "finalTitre": "Une heure pour repartir du bon pied.",
+    "_astuce": "Un texte peut contenir des variables : « Une heure avec {{coach.prenom}} à {{coach.ville}} » s'écrit tout seul."
+  },
+  "_1b_changer_l_offre": "L'objet offre est fusionné : les clés non citées restent celles par défaut.",
+  "offre": {
+    "bandeau": "3 bilans offerts en septembre",
+    "creneauxRestants": "2",
+    "valeur": "120 €"
+  },
+  "_2_changer_les_3_situations": "Liste : il faut recopier les trois blocs, même ceux qu'on garde.",
+  "situations": [
+    {
+      "titre": "Vous êtes assis 8 h par jour",
+      "texte": "Et votre dos commence à vous le faire payer."
+    },
+    {
+      "titre": "Vous avez déjà repris. Deux fois.",
+      "texte": "Un abonnement en janvier, plus rien en mars."
+    },
+    {
+      "titre": "Vous ne savez pas par où commencer",
+      "texte": "Trop d'infos contradictoires, aucune adaptée à vous."
+    }
+  ],
+  "_3_changer_le_deroule": "Les durées alimentent les pastilles de la page.",
+  "etapes": [
+    {
+      "duree": "20 min",
+      "titre": "On fait le point",
+      "texte": "…"
+    },
+    {
+      "duree": "25 min",
+      "titre": "On bouge ensemble",
+      "texte": "…"
+    },
+    {
+      "duree": "15 min",
+      "titre": "On pose le plan",
+      "texte": "…"
+    }
+  ],
+  "_4_ajouter_une_question_a_la_faq": "Liste aussi : recopiez les questions à garder, puis ajoutez la vôtre.",
+  "faq": [
+    {
+      "question": "Je n'ai pas fait de sport depuis des années. C'est vraiment pour moi ?",
+      "reponse": "…",
+      "ouvert": true
+    },
+    {
+      "question": "Est-ce que c'est accessible en transports ?",
+      "reponse": "Oui, arrêt de tram à 3 minutes à pied."
+    }
+  ],
+  "_5_masquer_une_section": "Une liste vide masque toute la section correspondante sur cette page.",
+  "atouts": [],
+  "_6_changer_les_couleurs": "Pour un coach qui a sa propre identité visuelle (accent = la couleur des boutons et des mots mis en avant).",
+  "marque": {
+    "accent": "#B4432B",
+    "accentClair": "#F6E3DE"
+  },
+  "_7_ses_propres_visuels": "Déposez les fichiers dans assets/<slug>/ ou mettez des URL complètes.",
+  "visuels": {
+    "hero": "assets/hero.jpg",
+    "heroPosition": "center 20%",
+    "seance": "assets/seance.jpg"
+  },
+  "_8_son_propre_nom_de_domaine": "Sinon l'URL est calculée depuis site.base + le slug.",
+  "meta_avec_domaine_propre": {
+    "url": "https://coach-a-lyon.fr/"
+  },
+  "_9_refonte_complete_de_la_page": [
+    "Si le contenu ne suffit pas et qu'il faut une mise en page différente :",
+    "copier template/page.html en template/page-<slug>.html et le modifier.",
+    "La génération l'utilisera automatiquement pour ce coach uniquement,",
+    "et le signalera dans la sortie du build."
+  ],
+  "_10_avis_google": "Deux options : coller le code d'intégration d'un widget (Elfsight, Trustindex, Featurable) dans avis.widgetHtml, OU recopier des avis réels dans avis.liste. Le widget a la priorité.",
+  "avis": {
+    "widgetHtml": "<div class=\"elfsight-app-xxxxxxxx\" data-elfsight-app-lazy></div><script src=\"https://static.elfsight.com/platform/platform.js\" async></script>",
+    "note": "4,9",
+    "nombre": "37",
+    "lienProfil": "https://g.page/r/…",
+    "liste": [
+      {
+        "texte": "Avis réel copié depuis la fiche Google.",
+        "auteur": "Julie M.",
+        "initiale": "J",
+        "date": "juillet 2026",
+        "note": "5"
+      }
+    ]
+  }
+}
