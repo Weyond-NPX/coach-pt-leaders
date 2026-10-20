@@ -45,7 +45,7 @@
       "objectif": "Une activité adaptée à votre corps et à vos objectifs, qui évolue avec vous."
     }
   ],
-  "_etapes_note": "Les 3 temps du bilan, image à gauche, texte à droite. image : chemin vers une photo (ex. capture d'une vidéo). Sans image, un pictogramme la remplace et le build le signale.",
+  "_etapes_note": "Les 3 temps du bilan, image à gauche, texte à droite. image : chemin vers une photo (ex. capture d'une vidéo). Sans image, un pictogramme la remplace et le build le signale. imagePosition (facultatif) règle le cadrage, ex. « center 20% » pour remonter vers les visages.",
   "etapes": [
     {
       "icone": "userCheck",
@@ -55,13 +55,15 @@
     },
     {
       "icone": "clipboard",
-      "image": "",
+      "image": "assets/bilan-analyse.jpg",
+      "imagePosition": "center 20%",
       "titre": "L'analyse de vos habitudes",
       "texte": "Votre quotidien, votre sommeil, votre alimentation, vos antécédents et ce qui a coincé les fois précédentes."
     },
     {
       "icone": "carte",
-      "image": "",
+      "image": "assets/bilan-plan.jpg",
+      "imagePosition": "center 35%",
       "titre": "Votre plan d'action personnalisé",
       "texte": "Construit à partir de vos objectifs et du temps que vous avez vraiment. Vous repartez avec, par écrit."
     }

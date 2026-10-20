@@ -508,7 +508,7 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
       {{#each etapes}}
       <article class="temps-item">
         {{#if this.image}}
-        <img class="temps-visuel" src="{{this.image}}" alt="{{this.titre}}" loading="lazy">
+        <img class="temps-visuel" src="{{this.image}}" alt="{{this.titre}}" loading="lazy"{{#if this.imagePosition}} style="object-position:{{this.imagePosition}}"{{/if}}>
         {{else}}
         <div class="temps-visuel vide lueur" aria-hidden="true"><span class="chip"><svg class="i"><use href="#i-{{this.icone}}"/></svg></span></div>
         {{/if}}
