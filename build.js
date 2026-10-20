@@ -241,6 +241,18 @@ function main() {
     if (!cfg.avis.aDesAvis) {
       avertissements.push(`  ${slug} — aucun avis dans config.avis.liste → section preuve sociale masquée`);
     }
+    const sansImage = cfg.etapes.map((e, i) => (e.image ? null : i + 1)).filter(Boolean);
+    if (sansImage.length) {
+      avertissements.push(`  ${slug} — bilan : temps ${sansImage.join(', ')} sans photo (etapes[].image) → pictogramme à la place`);
+    }
+    if (!cfg.salle.photo) {
+      avertissements.push(`  ${slug} — pas de photo de la salle (salle.photo)`);
+    }
+    for (const [cle, liste] of Object.entries({ situations: cfg.situations, etapes: cfg.etapes, hesitation: cfg.hesitation, atouts: cfg.atouts })) {
+      if (Array.isArray(liste) && liste.length > 3) {
+        avertissements.push(`  ${slug} — ${cle} contient ${liste.length} éléments (3 maximum conseillés)`);
+      }
+    }
 
     // Un coach peut avoir sa propre mise en page : template/page-<slug>.html
     const tplPerso = path.join(TEMPLATE_DIR, `page-${slug}.html`);
@@ -293,6 +305,17 @@ function main() {
     dateGeneration: new Date().toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
   });
   fs.writeFileSync(path.join(DIST, 'index.html'), index, 'utf8');
+
+  // L'annuaire n'a besoin que du logo et du pictogramme, pas de toutes les photos.
+  const marque = dernierDefauts.marque || {};
+  for (const visuel of [marque.logo, marque.pictogramme]) {
+    if (!visuel || /^https?:/.test(visuel)) continue;
+    const src = path.join(ROOT, 'assets', 'commun', path.basename(visuel));
+    if (fs.existsSync(src)) {
+      fs.mkdirSync(path.join(DIST, 'assets'), { recursive: true });
+      fs.copyFileSync(src, path.join(DIST, 'assets', path.basename(visuel)));
+    }
+  }
   console.log('✓ /          →  dist/index.html  (annuaire des coachs)');
 
   if (avertissements.length) {

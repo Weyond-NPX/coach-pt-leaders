@@ -6,118 +6,115 @@
     "_note": "Domaine commun. Chaque coach est publié sur base + /son-slug/. L'URL canonique et les balises Open Graph en découlent automatiquement — inutile de renseigner meta.url par coach, sauf domaine propre."
   },
   "marque": {
-    "encre": "#161821",
-    "papier": "#F3F1EC",
-    "sable": "#E7E3D9",
-    "accent": "#2B44C7",
-    "accentClair": "#E3E6FA",
-    "accent2": "#6C4BE0",
-    "accent3": "#C2489B",
-    "_note": "accent → accent2 → accent3 forment le dégradé utilisé sur les boutons, les pictos et les blocs colorés."
+    "nom": "Weyond",
+    "encre": "#343838",
+    "papier": "#F6F5F0",
+    "sable": "#EBEAE1",
+    "blanc": "#FEFEFE",
+    "accent": "#96905E",
+    "accentFonce": "#6B6740",
+    "accentClair": "#EDEBDF",
+    "accent2": "#7A7754",
+    "accent3": "#5E5D4A",
+    "gris": "#ADAEAE",
+    "vert": "#63AF2E",
+    "logo": "assets/logo-weyond-noir.png",
+    "pictogramme": "assets/Pictogramme.png",
+    "_note": "Charte Weyond (assets/charte/palette-weyond.png). accent → accent2 → accent3 forment le dégradé olive → kaki des boutons, pictos et blocs colorés. accentFonce sert aux petits textes en couleur (lisibilité). vert = signal « disponible » (point animé, bandeau)."
   },
   "offre": {
     "bandeau": "5 bilans offerts ce mois-ci",
-    "duree": "1 heure",
     "nbBilans": "5",
-    "creneauxRestants": "3",
-    "valeur": "90 €",
-    "pourquoiGratuit": "Ce bilan est habituellement facturé 90 €. On en offre quelques-uns chaque mois parce que c'est la façon la plus honnête de vous montrer notre méthode : avec vos chiffres, pas avec des promesses. Vous repartez avec votre analyse et votre plan, que vous décidiez de continuer avec nous ou non."
+    "valeur": "90 €"
   },
+  "_situations_note": "Les 3 problèmes dans lesquels le visiteur se reconnaît (titre), chacun avec l'objectif que l'accompagnement lui apporte. 3 éléments maximum.",
   "situations": [
     {
       "icone": "agenda",
-      "titre": "Un quotidien déjà bien rempli",
-      "texte": "Un travail prenant, des journées denses, et un rapport au sport qui n'est plus celui d'il y a dix ans. Le temps que vous pourriez y consacrer, vous le comptez."
+      "titre": "Vos semaines sont déjà pleines",
+      "objectif": "Un sport qui allège votre quotidien au lieu de l'alourdir, en temps comme en énergie."
     },
     {
       "icone": "coeur",
-      "titre": "L'envie de prendre soin de vous",
-      "texte": "Vieillir en ayant confiance en votre corps et en ses capacités. Pas pour une performance ni pour une photo : pour vous sentir bien dans les vingt prochaines années."
+      "titre": "Le sport finit toujours en corvée",
+      "objectif": "Du plaisir plutôt qu'une contrainte : c'est ce qui fait qu'on continue."
     },
     {
       "icone": "boussole",
-      "titre": "Mais aucune idée de par où commencer",
-      "texte": "Des méthodes contradictoires, des programmes calibrés pour d'autres, et l'impression qu'il faudrait déjà être en forme pour s'y mettre. C'est exactement là que le bilan sert."
+      "titre": "Les programmes tout faits ne vous vont pas",
+      "objectif": "Une activité adaptée à votre corps et à vos objectifs, qui évolue avec vous."
     }
   ],
-  "cadrage": {
-    "cest": [
-      "Un rendez-vous physique d'une heure, en tête à tête avec un coach sportif diplômé",
-      "Une analyse de vos habitudes, de vos antécédents, de vos blessures et de votre objectif",
-      "Des mesures faites sur place avec les outils du coach : composition corporelle, métabolisme, dépense et besoins réels",
-      "Un plan écrit, chiffré, que vous emportez — même si vous ne continuez pas avec nous"
-    ],
-    "cestPas": [
-      "Ce n'est pas une séance de sport : vous ne vous entraînerez pas, et vous ne transpirerez pas",
-      "Ce n'est pas un cours d'essai ni une visite guidée de la salle",
-      "Ce n'est pas une prestation incluse dans votre abonnement",
-      "Ce n'est pas un rendez-vous où l'on vous fait signer sous pression"
-    ]
-  },
-  "desirs": [
-    "Retrouver de l'énergie au quotidien, pas seulement à la salle",
-    "Vous sentir bien dans vos vêtements, sans y penser tous les matins",
-    "Vieillir en confiance, avec un corps qui suit",
-    "Savoir enfin ce qui est adapté à vous, et pourquoi"
-  ],
-  "freins": [
-    "Vous n'avez pas trois soirées par semaine à y consacrer",
-    "Vous ne savez pas par où commencer, ni ce qui marche vraiment pour vous",
-    "Vous avez déjà essayé plusieurs fois sans que ça tienne",
-    "L'idée d'arriver dans une salle sans savoir quoi faire vous freine"
-  ],
+  "_etapes_note": "Les 3 temps du bilan, image à gauche, texte à droite. image : chemin vers une photo (ex. capture d'une vidéo). Sans image, un pictogramme la remplace et le build le signale.",
   "etapes": [
     {
-      "icone": "clipboard",
-      "duree": "15 min",
-      "titre": "Vos habitudes et votre historique",
-      "texte": "Votre quotidien, votre alimentation, votre sommeil, vos antécédents et vos blessures. Ce qui a coincé les fois précédentes, et ce que vous voulez vraiment obtenir."
+      "icone": "userCheck",
+      "image": "",
+      "titre": "Une heure en face à face",
+      "texte": "Un vrai rendez-vous, assis à une table avec {{coach.prenom}}, à la salle. Pas de tenue de sport, pas d'effort physique."
     },
     {
-      "icone": "jauge",
-      "duree": "30 min",
-      "titre": "Les mesures",
-      "texte": "Le coach mesure avec ses outils votre composition corporelle, votre métabolisme de base et votre dépense réelle. Vous n'avez rien à faire : vous répondez, il mesure."
+      "icone": "clipboard",
+      "image": "",
+      "titre": "L'analyse de vos habitudes",
+      "texte": "Votre quotidien, votre sommeil, votre alimentation, vos antécédents et ce qui a coincé les fois précédentes."
     },
     {
       "icone": "carte",
-      "duree": "15 min",
-      "titre": "Vos besoins et votre plan",
-      "texte": "Ce que vos chiffres impliquent concrètement : besoins caloriques, volume d'entraînement, rythme tenable. On pose un plan écrit, calibré sur votre semaine réelle."
+      "image": "",
+      "titre": "Votre plan d'action personnalisé",
+      "texte": "Construit à partir de vos objectifs et du temps que vous avez vraiment. Vous repartez avec, par écrit."
     }
   ],
-  "repartirAvec": [
+  "suite": {
+    "seul": {
+      "icone": "boussole",
+      "titre": "Démarrer seul",
+      "texte": "C'est tout à fait possible : vous repartez avec votre plan et toutes les clés pour vous lancer.",
+      "avertissement": "Pour être honnêtes : 90 % des personnes qui se lancent seules arrêtent avant 3 mois. Pas par manque de volonté, mais faute de cadre, de progrès visibles, de suivi… et de plaisir."
+    },
+    "coaching": {
+      "titre": "Le coaching individuel",
+      "image": "assets/coaching.jpg",
+      "points": [
+        "Sur mesure, selon vos disponibilités, votre budget et votre rythme",
+        "Un coach présent à chaque séance : plus besoin de vous motiver seul",
+        "Un programme qui suit vos progrès, votre forme du jour et votre motivation"
+      ]
+    }
+  },
+  "hesitation": [
     {
-      "icone": "graphique",
-      "titre": "Vos chiffres",
-      "texte": "Composition corporelle, métabolisme de base, besoins caloriques réels. Des repères objectifs sur votre corps, pas des moyennes trouvées en ligne."
+      "icone": "bouclier",
+      "titre": "Aucun risque",
+      "texte": "Une heure, aucun engagement, et vous repartez avec votre analyse et votre plan d'action, même si vous ne revenez pas."
     },
     {
-      "icone": "ampoule",
-      "titre": "Une explication",
-      "texte": "Pourquoi les tentatives précédentes n'ont pas tenu. Ce n'est presque jamais une question de volonté, et le voir écrit noir sur blanc change tout."
+      "icone": "etiquette",
+      "titre": "Pourquoi c'est gratuit",
+      "texte": "Ce bilan vaut habituellement {{offre.valeur}}. La façon la plus honnête de vous montrer notre méthode, c'est de l'appliquer à votre cas."
     },
     {
-      "icone": "document",
-      "titre": "Un plan écrit",
-      "texte": "Combien de séances, lesquelles, à quel rythme, sur combien de semaines. Un plan qui tient dans votre semaine, pas dans une semaine idéale."
+      "icone": "horloge",
+      "titre": "Pourquoi {{offre.nbBilans}} par mois seulement",
+      "texte": "Un bon bilan prend du temps, et le nôtre est limité : on préfère en faire peu, et bien. Sur {{offre.nbBilans}} bilans, 2 à 3 personnes choisissent en général de continuer avec nous."
     }
   ],
   "atouts": [
     {
       "icone": "diplome",
       "titre": "Un coach diplômé",
-      "texte": "Formé et expérimenté, habitué aux personnes qui reprennent après plusieurs années d'arrêt."
+      "texte": "Habitué aux personnes qui reprennent après des années d'arrêt."
     },
     {
       "icone": "horloge",
-      "titre": "Des horaires compatibles",
-      "texte": "Tôt le matin, sur la pause déjeuner ou en fin de journée. On s'adapte à votre semaine."
+      "titre": "Des horaires souples",
+      "texte": "Tôt le matin, à midi ou en fin de journée."
     },
     {
       "icone": "activite",
-      "titre": "Des outils de mesure",
-      "texte": "Le bilan s'appuie sur des mesures réelles, pas sur une estimation à l'œil."
+      "titre": "Des mesures réelles",
+      "texte": "Composition corporelle et métabolisme, mesurés sur place."
     }
   ],
   "faq": [
@@ -153,11 +150,10 @@
   ],
   "visuels": {
     "hero": "assets/hero.jpg",
-    "heroPosition": "center 30%",
-    "seance": "assets/Weyond ©Yassin Tijane (@yastijane)-1.jpg"
+    "heroPosition": "center 30%"
   },
   "avis": {
-    "_note": "Deux façons de faire, au choix. 1) widgetHtml : collez ici le code d'intégration d'un service d'avis Google (Elfsight, Trustindex, Featurable…) — il est inséré tel quel. 2) liste : recopiez 3 ou 4 avis réels de la fiche Google. Si widgetHtml est rempli, il remplace la liste.",
+    "_note": "Deux façons de faire, au choix. 1) widgetHtml : collez ici le code d'intégration d'un service d'avis Google (Elfsight, Trustindex, Featurable…) — il est inséré tel quel. 2) liste : recopiez 3 avis réels de la fiche Google. Si widgetHtml est rempli, il remplace la liste.",
     "widgetHtml": "",
     "note": "",
     "nombre": "",
@@ -169,15 +165,14 @@
     "confidentialiteUrl": "/confidentialite"
   },
   "textes": {
-    "_note": "Tout le texte de la page. Un coach peut redéfinir n'importe quelle clé pour lui seul. Les clés en -Html acceptent du HTML simple (ex : <span class=\"souligne\">mot en couleur</span>).",
+    "_note": "Tout le texte de la page. Un coach peut redéfinir n'importe quelle clé pour lui seul. Les clés en -Html acceptent du HTML simple (ex : <span class=\"souligne\">mot en couleur</span>). situationsChapo porte le ciblage par âge : à adapter à l'avatar de chaque coach.",
     "roleCoach": "Coach sportif",
-    "annonceSuffixe": "il reste {{offre.creneauxRestants}} places à {{coach.ville}}",
-    "h1Html": "Reprenez le sport <br><span class=\"souligne\">sans bouleverser vos semaines.</span>",
-    "heroAccroche": "Grâce à un bilan forme gratuit d'une heure avec {{coach.prenom}}, coach sportif à {{coach.ville}} : on analyse vos habitudes, on mesure où vous en êtes vraiment, et vous repartez avec un plan calibré sur le temps que vous avez. Pas sur une semaine idéale.",
-    "ctaPrincipal": "Réserver mon bilan",
-    "sousCta": "Gratuit · sans engagement",
-    "vignetteTitre": "Ce n'est pas une séance de sport",
-    "vignetteDetail": "Analyse · mesures · plan écrit",
+    "annonceSuffixe": "à {{coach.ville}}, sur rendez-vous",
+    "heroKicker": "{{textes.roleCoach}} à {{coach.ville}}",
+    "h1Html": "Trouvez enfin le sport <span class=\"souligne\">qui tient dans le temps.</span>",
+    "heroAccroche": "Commencer, tout le monde sait faire. Tenir, c'est autre chose. En une heure de bilan offert, {{coach.prenom}} pose avec vous les bases d'une pratique sportive et d'une hygiène de vie faites pour durer.",
+    "ctaPrincipal": "Réserver mon bilan gratuit",
+    "sousCta": "1 heure en face à face · sans engagement",
     "faits": [
       {
         "label": "Durée",
@@ -185,82 +180,54 @@
         "icone": "chrono"
       },
       {
-        "label": "Tarif habituel",
+        "label": "Tarif habituel {{offre.valeur}}",
         "valeur": "Offert",
         "accent": true,
         "icone": "etiquette"
       },
       {
         "label": "Vous repartez avec",
-        "valeur": "Vos chiffres",
+        "valeur": "Un plan d'action adapté",
         "icone": "document"
-      },
-      {
-        "icone": "cadenas",
-        "label": "Engagement",
-        "valeur": "Aucun"
       }
     ],
     "situationsKicker": "Vous vous reconnaissez ?",
-    "situationsTitre": "On ne reprend jamais le sport par hasard",
-    "situationsChapo": "La plupart des personnes qui entrent pour la première fois en salle de sport et qui ont entre 30 et 45 ans ont un travail prenant, un quotidien chargé, et un rapport au sport qui n'est plus le même. Vous avez envie de prendre soin de vous, de vieillir en ayant confiance en votre corps et en ses capacités. Mais vous ne savez pas par où commencer.",
-    "basculeHtml": "Le problème n'est pas votre motivation : c'est que vous ne voyez pas comment le sport peut devenir un <span class=\"souligne\">allié</span> de votre quotidien chargé, sans l'alourdir.",
-    "basculeCta": "Faire le point",
-    "cadrageKicker": "Pour éviter tout malentendu",
-    "cadrageTitre": "Ce rendez-vous, c'est quoi exactement ?",
-    "cadrageChapo": "C'est le point le plus important de cette page : beaucoup de gens réservent en croyant venir faire du sport, puis ne viennent pas. Le bilan est un rendez-vous d'analyse, pas une séance.",
-    "cadrageOui": "Ce que c'est",
-    "cadrageNon": "Ce que ce n'est pas",
-    "derouleKicker": "Le déroulé",
+    "situationsTitre": "Le plus dur, ce n'est pas de commencer. C'est de tenir.",
+    "situationsChapo": "Entre 30 et 45 ans, entre le travail et le quotidien, le sport a du mal à trouver sa place. Trois obstacles reviennent presque toujours.",
+    "basculeHtml": "La réponse : un <span class=\"souligne\">accompagnement personnalisé</span>. Et tout commence par un bilan d'une heure.",
+    "derouleKicker": "Le bilan",
     "derouleTitre": "Une heure, trois temps",
-    "derouleChapo": "Rien d'improvisé, et aucun effort physique demandé. Vous savez en arrivant à quoi ressemblera chaque minute.",
-    "emporterKicker": "À la sortie",
-    "emporterTitre": "Trois choses que vous n'aviez pas en entrant",
+    "derouleChapo": "Un rendez-vous physique avec {{coach.prenom}}, à la salle. Ni une séance de sport, ni une visite de la salle.",
+    "suiteKicker": "Après le bilan",
+    "suiteTitre": "Deux options. C'est vous qui choisissez.",
     "avisKicker": "Avis vérifiés",
     "avisTitre": "Ils ont fait le bilan avant vous",
-    "objectifsKicker": "Le point de départ",
-    "objectifsTitre": "Ce que vous voulez, ce qui vous freine",
-    "colonneObjectifs": "Ce que vous voulez",
-    "colonneFreins": "Ce qui vous freine",
+    "hesitationKicker": "Si vous hésitez encore",
+    "hesitationTitre": "C'est normal. Voici ce qu'il faut savoir.",
     "lieuKicker": "Le lieu",
     "lieuTitre": "Où se passe le rendez-vous",
-    "pacteKicker": "Engagement réciproque",
-    "pacteTitre": "Ce créneau vous est réservé nominativement",
-    "pacteNousTitre": "Ce qu'on s'engage à faire",
-    "pacteNous": [
-      "Vous envoyer un SMS de confirmation dès la réservation",
-      "Vous rappeler la veille, avec l'adresse exacte et le nom du coach",
-      "Vous appeler le matin même pour confirmer",
-      "Vous consacrer une heure pleine, sans vente sous pression"
-    ],
-    "pacteVousTitre": "Ce qu'on vous demande",
-    "pacteVous": [
-      "Arriver 5 minutes en avance",
-      "Venir avec vos questions, et vos derniers examens médicaux si vous en avez",
-      "Prévenir 24 h avant en cas d'empêchement — on décale sans problème"
-    ],
-    "pacteAvertHtml": "<b>Un rendez-vous manqué sans prévenir ne pourra pas être reporté</b>, par respect pour votre temps, le nôtre, et celui des personnes en liste d'attente.",
-    "resaTitre": "Choisissez votre créneau",
+    "resaKicker": "Gratuit · 1 heure",
+    "resaTitre": "Comment réserver votre rendez-vous bilan ?",
     "resaEtapes": [
       {
-        "titre": "La date et l'heure",
-        "texte": "Celles qui vous arrangent, dans le calendrier ci-dessous.",
+        "titre": "Sélectionnez la date et l'heure",
+        "texte": "Dans le calendrier ci-dessous.",
         "icone": "calendrier"
       },
       {
-        "titre": "La confirmation",
-        "texte": "Adresse exacte et nom du coach, par SMS et par email.",
-        "icone": "message"
+        "titre": "Indiquez vos coordonnées",
+        "texte": "Nom, téléphone et email.",
+        "icone": "userCheck"
       },
       {
-        "titre": "Le rendez-vous",
-        "texte": "Une heure avec {{coach.prenom}}, à {{salle.ville}}.",
-        "icone": "userCheck"
+        "titre": "Recevez la confirmation",
+        "texte": "Par SMS et email, avec l'adresse.",
+        "icone": "message"
       }
     ],
     "faqKicker": "Questions fréquentes",
     "faqTitre": "Ce qu'on nous demande le plus",
-    "finalTitre": "Une heure aujourd'hui. Des semaines qui tiennent ensuite.",
-    "finalTexte": "Pas de programme miracle, pas d'engagement à la sortie. Vos chiffres, une explication claire, et un plan qui rentre dans votre quotidien tel qu'il est."
+    "finalTitre": "Une heure aujourd'hui. Des résultats durables ensuite.",
+    "finalTexte": "Pas de programme miracle, pas d'engagement : votre analyse, votre plan d'action, et un rythme qui tient dans votre vie."
   }
 }

@@ -161,7 +161,7 @@ Tout le texte de la page vit dans `textes.*`. Exemple, dans `config/prenom-nom.j
 }
 ```
 
-Les trois autres phrases, la FAQ, le pacte et le reste restent inchangés.
+Les autres phrases, la FAQ et le reste restent inchangés.
 Les clés en `-Html` acceptent du HTML simple — pratique pour mettre un mot en
 couleur d'accent avec `<span class="souligne">…</span>`.
 
@@ -186,8 +186,23 @@ Une liste vide supprime la section correspondante sur cette page :
 "faq": []            // enlève la FAQ
 ```
 
-Sections concernées : `situations`, `cadrage`, `etapes`, `repartirAvec`,
-`desirs`, `atouts`, `faq`, `avis`.
+Sections concernées : `situations`, `etapes`, `atouts`, `faq`, `avis`.
+Chaque liste est limitée à 3 éléments (sauf la FAQ) : le build prévient si on dépasse.
+
+### Les photos
+
+| Clé | Où | Format conseillé |
+| --- | --- | --- |
+| `visuels.hero` | portrait du coach, en haut | vertical, ~1100 px |
+| `etapes[].image` | les 3 temps du bilan (une capture de vidéo suffit) | horizontal 16:10, ~1200 px |
+| `salle.photo` | entrée de la salle, section « Le lieu » | horizontal 16:9, ~1200 px |
+| `suite.coaching.image` | option « coaching individuel » | horizontal, ~1600 px |
+
+Déposer les fichiers dans `assets/<slug>/` (ou `assets/commun/` s'ils servent à
+tout le monde), puis écrire `"assets/nom-du-fichier.jpg"`. Sans photo, le temps
+du bilan affiche un pictogramme et la carte du lieu une pastille : la page reste
+propre, et le build liste ce qui manque. Les photos brutes (plusieurs Mo) vont dans
+`assets/originaux/`, qui n'est pas publié : en publier une version réduite.
 
 ### Les avis Google
 
@@ -207,17 +222,28 @@ un de ces services, ou recopier les avis (5 minutes, zéro dépendance).
 
 ### Changer les couleurs
 
-Trois teintes forment le dégradé utilisé sur les boutons, les pictogrammes,
-les grands chiffres et le bloc de prix :
+La charte par défaut est celle de Weyond (palette de référence :
+`assets/charte/palette-weyond.png`). Trois teintes forment le dégradé utilisé
+sur les boutons, les pictogrammes, les grands chiffres et le bloc de prix :
 
 ```jsonc
 "marque": {
-  "accent":      "#2B44C7",   // début du dégradé, couleur des liens et pastilles
-  "accent2":     "#6C4BE0",   // milieu
-  "accent3":     "#C2489B",   // fin
-  "accentClair": "#E3E6FA"    // fonds légers (pastilles creuses, badges)
+  "encre":       "#343838",   // texte et blocs sombres (anthracite)
+  "accent":      "#96905E",   // début du dégradé (olive)
+  "accent2":     "#7A7754",   // milieu
+  "accent3":     "#5E5D4A",   // fin (kaki)
+  "accentFonce": "#6B6740",   // petits textes en couleur : l'olive pur n'est pas assez lisible
+  "accentClair": "#EDEBDF",   // fonds légers (pastilles creuses, badges)
+  "gris":        "#ADAEAE",   // textes secondaires sur fond sombre, puces « non »
+  "vert":        "#63AF2E",   // signal « disponible » : point animé, bandeau
+  "blanc":       "#FEFEFE",   // cartes
+  "logo":        "assets/logo-weyond-noir.png",  // pied de page et annuaire
+  "pictogramme": "assets/Pictogramme.png"        // en-tête et favicon
 }
 ```
+
+Les fichiers de logo vivent dans `assets/commun/`. `assets/charte/` garde les
+originaux et la palette ; ce dossier n'est pas publié.
 
 ### Les pictogrammes
 

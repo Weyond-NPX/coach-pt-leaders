@@ -10,17 +10,15 @@
     "adresse": "REMPLACER — numéro et rue",
     "codePostal": "38120",
     "ville": "Saint-Égrève",
-    "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher."
+    "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher.",
+    "photo": ""
   },
   "calendrier": {
     "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/REMPLACER_ID_GHL"
   },
-  "offre": {
-    "creneauxRestants": "4"
-  },
   "meta": {
     "titre": "Bilan forme offert à Saint-Égrève — Tristan Maffettone, coach sportif",
-    "description": "Reprenez le sport sans bouleverser vos semaines. 1 h d'analyse et de mesures avec un coach sportif diplômé à Saint-Égrève, puis un plan écrit. Ce n'est pas une séance de sport. 5 bilans offerts ce mois-ci."
+    "description": "Reprenez le sport et tenez sur la durée. Bilan offert d'une heure en face à face avec un coach sportif diplômé à Saint-Égrève. Vous repartez avec un plan d'action adapté."
   },
   "avis": {
     "note": "",

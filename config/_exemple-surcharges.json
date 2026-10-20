@@ -15,7 +15,8 @@
     "nom": "Basic-Fit",
     "adresse": "1 rue Exemple",
     "codePostal": "00000",
-    "ville": "Ville"
+    "ville": "Ville",
+    "photo": "assets/basic-fit-ville.jpg"
   },
   "calendrier": {
     "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/ID"
@@ -27,47 +28,52 @@
   "_1_changer_le_copywriting": "Tout le texte de la page vit dans textes.*. On ne redéfinit QUE les clés à changer, le reste reste celui de _defaults.json. Les clés en -Html acceptent du HTML simple.",
   "textes": {
     "h1Html": "Se remettre au sport <span class=\"souligne\">après 40 ans</span>, sans se blesser.",
-    "ctaPrincipal": "Je réserve ma place",
-    "situationsTitre": "Votre corps a changé. Votre entraînement, non.",
+    "situationsChapo": "Entre 40 et 55 ans, le corps change et les priorités aussi. Trois obstacles reviennent presque toujours.",
     "finalTitre": "Une heure pour repartir du bon pied.",
-    "_astuce": "Un texte peut contenir des variables : « Une heure avec {{coach.prenom}} à {{coach.ville}} » s'écrit tout seul."
+    "_astuce": "Un texte peut contenir des variables : « Une heure avec {{coach.prenom}} à {{coach.ville}} » s'écrit tout seul. situationsChapo porte le ciblage par âge, à adapter à l'avatar du coach."
   },
   "_1b_changer_l_offre": "L'objet offre est fusionné : les clés non citées restent celles par défaut.",
   "offre": {
     "bandeau": "3 bilans offerts en septembre",
-    "creneauxRestants": "2",
-    "valeur": "120 €"
+    "nbBilans": "3",
+    "valeur": "120 €"
   },
-  "_2_changer_les_3_situations": "Liste : il faut recopier les trois blocs, même ceux qu'on garde.",
+  "_2_changer_les_3_situations": "Liste : il faut recopier les trois blocs, même ceux qu'on garde. titre = le problème, objectif = ce que l'accompagnement apporte.",
   "situations": [
     {
+      "icone": "agenda",
       "titre": "Vous êtes assis 8 h par jour",
-      "texte": "Et votre dos commence à vous le faire payer."
+      "objectif": "Un dos qui ne vous rappelle plus à l'ordre chaque soir."
     },
     {
+      "icone": "coeur",
       "titre": "Vous avez déjà repris. Deux fois.",
-      "texte": "Un abonnement en janvier, plus rien en mars."
+      "objectif": "Un rythme assez léger pour tenir au-delà de mars."
     },
     {
+      "icone": "boussole",
       "titre": "Vous ne savez pas par où commencer",
-      "texte": "Trop d'infos contradictoires, aucune adaptée à vous."
+      "objectif": "Un plan adapté à vous, pas à un athlète de 25 ans."
     }
   ],
-  "_3_changer_le_deroule": "Les durées alimentent les pastilles de la page.",
+  "_3_changer_le_deroule": "Les 3 temps du bilan. image = photo du temps (capture de vidéo possible).",
   "etapes": [
     {
-      "duree": "20 min",
-      "titre": "On fait le point",
+      "icone": "userCheck",
+      "image": "assets/rdv-table.jpg",
+      "titre": "Une heure en face à face",
       "texte": "…"
     },
     {
-      "duree": "25 min",
-      "titre": "On bouge ensemble",
+      "icone": "clipboard",
+      "image": "assets/analyse.jpg",
+      "titre": "L'analyse de vos habitudes",
       "texte": "…"
     },
     {
-      "duree": "15 min",
-      "titre": "On pose le plan",
+      "icone": "carte",
+      "image": "assets/plan.jpg",
+      "titre": "Votre plan d'action personnalisé",
       "texte": "…"
     }
   ],
@@ -92,9 +98,8 @@
   },
   "_7_ses_propres_visuels": "Déposez les fichiers dans assets/<slug>/ ou mettez des URL complètes.",
   "visuels": {
-    "hero": "assets/hero.jpg",
-    "heroPosition": "center 20%",
-    "seance": "assets/seance.jpg"
+    "hero": "assets/portrait.jpg",
+    "heroPosition": "center 20%"
   },
   "_8_son_propre_nom_de_domaine": "Sinon l'URL est calculée depuis site.base + le slug.",
   "meta_avec_domaine_propre": {

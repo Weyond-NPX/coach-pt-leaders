@@ -10,7 +10,9 @@
     "adresse": "560 All. des Terriers",
     "codePostal": "06160",
     "ville": "Antibes",
-    "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher."
+    "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher.",
+    "photo": "",
+    "_photo": "Photo de l'entrée du Basic-Fit d'Antibes, à déposer dans assets/thomas-vaysse/ puis renseigner le chemin (ex. assets/basic-fit-antibes.jpg)."
   },
   "lieuxSupplementaires": [
     {
@@ -23,7 +25,7 @@
   },
   "meta": {
     "titre": "Bilan forme offert à Antibes — Thomas Vaysse, coach sportif",
-    "description": "Reprenez le sport sans bouleverser vos semaines. 1 h d'analyse et de mesures avec un coach sportif diplômé au Basic-Fit d'Antibes, puis un plan écrit. Ce n'est pas une séance de sport. 5 bilans offerts ce mois-ci."
+    "description": "Reprenez le sport et tenez sur la durée. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit d'Antibes ou de Cannes Forville. Vous repartez avec un plan d'action adapté."
   },
   "avis": {
     "note": "",
