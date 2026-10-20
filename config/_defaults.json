@@ -49,7 +49,7 @@
   "etapes": [
     {
       "icone": "userCheck",
-      "image": "",
+      "image": "assets/bilan-rendez-vous.jpg",
       "titre": "Une heure en face à face",
       "texte": "Un vrai rendez-vous, assis à une table avec {{coach.prenom}}, à la salle. Pas de tenue de sport, pas d'effort physique."
     },
@@ -70,6 +70,7 @@
     "seul": {
       "icone": "boussole",
       "titre": "Démarrer seul",
+      "image": "assets/demarrer-seul.jpg",
       "texte": "C'est tout à fait possible : vous repartez avec votre plan et toutes les clés pour vous lancer.",
       "avertissement": "Pour être honnêtes : 90 % des personnes qui se lancent seules arrêtent avant 3 mois. Pas par manque de volonté, mais faute de cadre, de progrès visibles, de suivi… et de plaisir."
     },

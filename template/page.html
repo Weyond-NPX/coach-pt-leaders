@@ -241,11 +241,12 @@ section{padding:88px 0;position:relative}
 /* ---------- après le bilan : 2 options ---------- */
 .options{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px;align-items:stretch}
 .option{border-radius:var(--r-xl);overflow:hidden}
-.option.seul{background:var(--sable);padding:34px 32px 36px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.option img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.option.seul{background:var(--sable);display:flex;flex-direction:column}
+.option.seul .option-corps{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px}
 .option.seul p{margin:0;font-size:16.5px}
 .option .honnete{color:var(--encre-2);padding-top:16px;border-top:1px solid color-mix(in srgb,var(--encre) 12%,transparent)}
 .option.coaching{background:var(--encre);color:var(--papier);display:flex;flex-direction:column}
-.option.coaching img{width:100%;aspect-ratio:16/8;object-fit:cover}
 .option-corps{padding:30px 32px 36px}
 .option.coaching h3{color:var(--papier);margin-bottom:22px}
 .option.coaching ul{list-style:none;margin:0;padding:0;display:grid;gap:15px}
@@ -533,10 +534,13 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
     </div>
     <div class="options">
       <article class="option seul">
-        <span class="chip creux"><svg class="i"><use href="#i-{{suite.seul.icone}}"/></svg></span>
-        <h3>{{suite.seul.titre}}</h3>
-        <p>{{suite.seul.texte}}</p>
-        <p class="honnete">{{suite.seul.avertissement}}</p>
+        {{#if suite.seul.image}}<img src="{{suite.seul.image}}" alt="{{suite.seul.titre}}" loading="lazy">{{/if}}
+        <div class="option-corps">
+          {{#if suite.seul.image}}{{else}}<span class="chip creux"><svg class="i"><use href="#i-{{suite.seul.icone}}"/></svg></span>{{/if}}
+          <h3>{{suite.seul.titre}}</h3>
+          <p>{{suite.seul.texte}}</p>
+          <p class="honnete">{{suite.seul.avertissement}}</p>
+        </div>
       </article>
       <article class="option coaching">
         {{#if suite.coaching.image}}<img src="{{suite.coaching.image}}" alt="{{suite.coaching.titre}}" loading="lazy">{{/if}}

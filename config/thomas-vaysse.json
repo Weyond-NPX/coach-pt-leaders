@@ -11,8 +11,7 @@
     "codePostal": "06160",
     "ville": "Antibes",
     "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher.",
-    "photo": "",
-    "_photo": "Photo de l'entrée du Basic-Fit d'Antibes, à déposer dans assets/thomas-vaysse/ puis renseigner le chemin (ex. assets/basic-fit-antibes.jpg)."
+    "photo": "assets/Front_club_outside.avif"
   },
   "lieuxSupplementaires": [
     {
