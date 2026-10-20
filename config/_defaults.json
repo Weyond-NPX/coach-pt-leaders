@@ -100,7 +100,7 @@
     {
       "icone": "horloge",
       "titre": "Pourquoi {{offre.nbBilans}} par mois seulement",
-      "texte": "Un bon bilan prend du temps, et le nôtre est limité : on préfère en faire peu, et bien. Sur {{offre.nbBilans}} bilans, 2 à 3 personnes choisissent en général de continuer avec nous."
+      "texte": "On accompagne très peu de personnes en coaching, pour apporter à chacune un maximum de valeur et de résultats. Les bilans suivent la même règle. En général, 2 à 3 personnes sur {{offre.nbBilans}} continuent ensuite avec nous."
     }
   ],
   "atouts": [
