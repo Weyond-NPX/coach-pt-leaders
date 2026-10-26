@@ -220,6 +220,18 @@ Le widget a la priorité s'il est rempli. Si les deux sont vides, la section
 disparaît. Google ne propose pas de widget officiel gratuit : il faut passer par
 un de ces services, ou recopier les avis (5 minutes, zéro dépendance).
 
+### L'encart d'autorité
+
+Un bandeau de chiffres clés, commun à tous les coachs, affiché avant les avis :
+
+```jsonc
+"autorite": { "anneesExperience": "8", "clientsAccompagnes": "150" }
+```
+
+Le nombre d'avis Google (et la note) vient de `avis.nombre` / `avis.note`, avec un lien
+vers `avis.lienProfil`. Chaque chiffre vide est masqué ; si tout est vide, l'encart
+disparaît et le build le signale. Uniquement des chiffres réels.
+
 ### Changer les couleurs
 
 La charte par défaut est celle de Weyond (palette de référence :

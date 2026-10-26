@@ -274,7 +274,7 @@ section{padding:88px 0;position:relative}
 .valeur{
   position:relative;overflow:hidden;isolation:isolate;
   background:var(--grad);color:#fff;border-radius:var(--r-xl);padding:56px 48px;
-  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center;
+  display:grid;gap:36px;
 }
 .valeur::before{
   content:"";position:absolute;z-index:-1;width:520px;height:520px;right:-140px;top:-190px;border-radius:50%;
@@ -283,17 +283,37 @@ section{padding:88px 0;position:relative}
 .valeur::after{
   content:"";position:absolute;inset:0;z-index:-1;background-image:var(--grain);opacity:.2;mix-blend-mode:overlay;
 }
-.valeur h2{color:#fff}
-.valeur .prix{display:flex;align-items:baseline;gap:20px;margin-top:22px}
-.valeur .barre{font-family:var(--titre);font-weight:700;font-size:clamp(28px,3.6vw,40px);opacity:.62;text-decoration:line-through;text-decoration-thickness:3px}
-.valeur .gratuit{font-family:var(--titre);font-weight:800;font-size:clamp(44px,6.4vw,72px);letter-spacing:-.035em;line-height:.95}
+.valeur h2{color:#fff;max-width:22ch}
+.valeur h2 .attenue{color:rgba(255,255,255,.62)}
 .valeur p{color:rgba(255,255,255,.94)}
-.valeur .kicker{background:rgba(255,255,255,.18);color:#fff}
-.raisons{list-style:none;margin:0;padding:0;display:grid;gap:22px}
-.raisons li{display:flex;gap:16px;align-items:flex-start}
-.raisons .chip{background:rgba(255,255,255,.16);box-shadow:none}
-.raisons b{display:block;font-family:var(--titre);font-weight:800;font-size:19px;letter-spacing:-.02em;margin-bottom:4px}
-.raisons p{margin:0;font-size:16px;line-height:1.5}
+.valeur .kicker{background:rgba(255,255,255,.18);color:#fff;margin-bottom:16px}
+.valeur .intro{margin:20px 0 0;font-size:clamp(18px,2vw,21px);line-height:1.5;font-weight:500;max-width:52ch}
+.raisons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.raison{background:rgba(255,255,255,.12);border-radius:var(--r-l);padding:28px 28px 30px;display:flex;flex-direction:column;gap:14px}
+.raison .chip,.conclusion .chip{background:rgba(255,255,255,.16);box-shadow:none}
+.raison h3{color:#fff}
+.raison p{margin:0;font-size:16.5px;line-height:1.55}
+.conclusion{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:20px 24px;align-items:center;
+  padding-top:32px;border-top:1px solid rgba(255,255,255,.28);
+}
+.conclusion b{display:block;font-family:var(--titre);font-weight:800;font-size:21px;letter-spacing:-.02em;margin-bottom:6px}
+.conclusion p{margin:0;font-size:16.5px;line-height:1.5;max-width:60ch}
+.conclusion p + p{margin-top:8px;font-weight:600}
+
+/* ---------- encart d'autorité ---------- */
+.autorite{
+  background:var(--encre);color:var(--papier);border-radius:var(--r-xl);padding:34px 40px;
+  display:flex;flex-wrap:wrap;justify-content:space-around;gap:26px 40px;text-align:center;
+}
+.autorite > *{display:flex;flex-direction:column;gap:6px;text-decoration:none;min-width:150px}
+.autorite strong{
+  font-family:var(--titre);font-weight:800;font-size:clamp(38px,4.6vw,52px);line-height:1;letter-spacing:-.04em;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 55%,#fff),#fff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+}
+.autorite span{font-size:15px;color:var(--gris)}
+.autorite a span{text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.3)}
 
 /* ---------- lieu ---------- */
 .lieu{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:20px;align-items:stretch}
@@ -305,7 +325,6 @@ section{padding:88px 0;position:relative}
 .lien-accent{color:var(--accent-fonce);font-weight:600;font-size:15.5px;text-underline-offset:4px;align-self:flex-start;display:inline-flex;align-items:center;gap:7px}
 .map{border-radius:var(--r-xl);overflow:hidden;min-height:340px;background:var(--sable)}
 .map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
-.autres{margin:0;font-size:14.5px;color:var(--encre-2);border-top:1px solid var(--filet);padding-top:14px}
 .atouts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
 .atout{background:var(--blanc);border-radius:var(--r-l);padding:24px;display:flex;gap:16px;align-items:flex-start;border:1px solid color-mix(in srgb,var(--filet) 60%,transparent)}
 .atout b{display:block;font-family:var(--titre);font-weight:800;font-size:17.5px;letter-spacing:-.02em;margin-bottom:6px}
@@ -370,22 +389,21 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
   .temps-item{grid-template-columns:1fr;gap:22px;padding:12px 12px 28px}
   .temps-texte{padding-inline:12px}
   .apres-situations,.valeur{grid-template-columns:1fr;padding:34px 28px}
+  .valeur{gap:28px}
+  .raisons{grid-template-columns:1fr}
+  .raison{padding:24px 22px 26px}
+  .conclusion{grid-template-columns:auto minmax(0,1fr)}
+  .conclusion .btn{grid-column:1/-1;justify-self:start}
+  .autorite{padding:30px 24px}
   .final{padding:48px 26px}
   body{padding-bottom:82px}
+  /* Sur mobile, pas de barre haute : seul le bouton collant du bas reste. */
+  .entete{display:none}
   .collante{display:flex}
 }
 @media (max-width:560px){
-  .marque-nom span{display:none}
-  .marque-nom{font-size:15px}
-  .entete .btn{padding:9px 14px;font-size:13.5px}
   .btn{font-size:16px;padding:15px 24px}
   .apres-situations .btn{justify-self:start}
-  .entete .in{gap:12px}
-  .logo{gap:9px}
-  .logo .picto{width:34px;height:34px}
-}
-@media (max-width:430px){
-  .marque-nom{display:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
 </style>
@@ -500,9 +518,9 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
 <section style="padding-top:0">
   <div class="wrap">
     <div class="tete">
-      <span class="kicker neutre">{{textes.derouleKicker}}</span>
+      {{#if textes.derouleKicker}}<span class="kicker neutre">{{textes.derouleKicker}}</span>{{/if}}
       <h2>{{textes.derouleTitre}}</h2>
-      <p class="chapo">{{textes.derouleChapo}}</p>
+      {{#if textes.derouleChapo}}<p class="chapo">{{textes.derouleChapo}}</p>{{/if}}
     </div>
     <div class="temps">
       {{#each etapes}}
@@ -529,7 +547,7 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
 <section style="padding-top:0">
   <div class="wrap">
     <div class="tete">
-      <span class="kicker neutre">{{textes.suiteKicker}}</span>
+      {{#if textes.suiteKicker}}<span class="kicker neutre">{{textes.suiteKicker}}</span>{{/if}}
       <h2>{{textes.suiteTitre}}</h2>
     </div>
     <div class="options">
@@ -553,6 +571,23 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
           </ul>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+{{/if}}
+
+<!-- ══════ ENCART D'AUTORITÉ ══════ -->
+{{#if autorite.afficher}}
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="autorite lueur">
+      {{#each autorite.chiffres}}
+      {{#if this.lien}}
+      <a href="{{this.lien}}" target="_blank" rel="noopener"><strong>{{this.valeur}}</strong><span>{{this.label}}</span></a>
+      {{else}}
+      <div><strong>{{this.valeur}}</strong><span>{{this.label}}</span></div>
+      {{/if}}
+      {{/each}}
     </div>
   </div>
 </section>
@@ -599,22 +634,30 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
   <div class="wrap">
     <div class="valeur">
       <div>
-        <span class="kicker">{{textes.hesitationKicker}}</span>
-        <h2 style="margin-top:16px">{{textes.hesitationTitre}}</h2>
-        <div class="prix">
-          <span class="barre">{{offre.valeur}}</span>
-          <span class="gratuit">Offert</span>
-        </div>
-        <a class="btn clair" href="#reserver" style="margin-top:28px"><span>{{textes.ctaPrincipal}}</span> <span class="fleche"><svg class="i"><use href="#i-fleche"/></svg></span></a>
+        {{#if textes.hesitationKicker}}<span class="kicker">{{textes.hesitationKicker}}</span>{{/if}}
+        <h2>{{{textes.hesitationTitreHtml}}}</h2>
+        {{#if textes.hesitationIntro}}<p class="intro">{{textes.hesitationIntro}}</p>{{/if}}
       </div>
-      <ul class="raisons">
+      {{#if hesitation}}
+      <div class="raisons">
         {{#each hesitation}}
-        <li>
-          <span class="chip petit"><svg class="i"><use href="#i-{{this.icone}}"/></svg></span>
-          <span><b>{{this.titre}}</b><p>{{this.texte}}</p></span>
-        </li>
+        <article class="raison">
+          {{#if this.icone}}<span class="chip petit"><svg class="i"><use href="#i-{{this.icone}}"/></svg></span>{{/if}}
+          <h3>{{this.titre}}</h3>
+          {{#each this.paragraphes}}<p>{{this}}</p>{{/each}}
+        </article>
         {{/each}}
-      </ul>
+      </div>
+      {{/if}}
+      <div class="conclusion">
+        <span class="chip"><svg class="i"><use href="#i-bouclier"/></svg></span>
+        <div>
+          <b>{{textes.hesitationConclusionTitre}}</b>
+          <p>{{textes.hesitationConclusionTexte}}</p>
+          {{#if textes.hesitationQualification}}<p>{{textes.hesitationQualification}}</p>{{/if}}
+        </div>
+        <a class="btn clair" href="#reserver"><span>{{textes.hesitationCta}}</span> <span class="fleche"><svg class="i"><use href="#i-fleche"/></svg></span></a>
+      </div>
     </div>
   </div>
 </section>
@@ -632,12 +675,9 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
         <p class="adresse"><b>{{salle.nom}}</b>{{salle.adresseComplete}}</p>
         <p class="pratique">{{salle.parking}}</p>
         <a class="lien-accent" href="{{salle.mapsLien}}" target="_blank" rel="noopener">Voir l'itinéraire <svg class="i" style="width:17px;height:17px"><use href="#i-fleche"/></svg></a>
-        {{#if lieuxMultiples}}
-        <p class="autres">Autre lieu possible&nbsp;: {{#each lieuxSupplementaires}}{{this.nom}} — {{this.adresse}}. {{/each}}Vous choisissez au moment de la réservation.</p>
-        {{/if}}
       </div>
       <div class="map">
-        <iframe src="{{salle.mapsEmbed}}" title="Carte — {{salle.nom}} {{salle.ville}}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="{{salle.mapsEmbed}}" title="Carte : {{salle.nom}} {{salle.ville}}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     {{#if atouts}}
@@ -674,7 +714,7 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
       {{/each}}
     </div>
     <div class="cadre-cal">
-      <iframe src="{{calendrier.urlEmbed}}" title="Calendrier de réservation — {{coach.prenom}} {{coach.nom}}" scrolling="no" id="calendrier-ghl" loading="lazy"></iframe>
+      <iframe src="{{calendrier.urlEmbed}}" title="Calendrier de réservation de {{coach.prenom}} {{coach.nom}}" scrolling="no" id="calendrier-ghl" loading="lazy"></iframe>
     </div>
   </div>
 </section>
@@ -730,7 +770,7 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
 {
   "@context":"https://schema.org",
   "@type":"LocalBusiness",
-  "name":"{{coach.prenom}} {{coach.nom}} — Coach sportif",
+  "name":"{{coach.prenom}} {{coach.nom}}, coach sportif",
   "image":"{{visuels.hero}}",
   "url":"{{meta.url}}",
   "address":{"@type":"PostalAddress","streetAddress":"{{salle.adresse}}","postalCode":"{{salle.codePostal}}","addressLocality":"{{salle.ville}}","addressCountry":"FR"},

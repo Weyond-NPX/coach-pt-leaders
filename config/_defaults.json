@@ -48,24 +48,24 @@
   "_etapes_note": "Les 3 temps du bilan, image à gauche, texte à droite. image : chemin vers une photo (ex. capture d'une vidéo). Sans image, un pictogramme la remplace et le build le signale. imagePosition (facultatif) règle le cadrage, ex. « center 20% » pour remonter vers les visages.",
   "etapes": [
     {
-      "icone": "userCheck",
+      "icone": "clipboard",
       "image": "assets/bilan-rendez-vous.jpg",
-      "titre": "Une heure en face à face",
-      "texte": "Un vrai rendez-vous, assis à une table avec {{coach.prenom}}, à la salle. Pas de tenue de sport, pas d'effort physique."
+      "titre": "Analyse de vos habitudes",
+      "texte": "Votre quotidien, votre sommeil, votre alimentation, vos antécédents et ce qui a coincé les fois précédentes."
     },
     {
-      "icone": "clipboard",
+      "icone": "jauge",
       "image": "assets/bilan-analyse.jpg",
       "imagePosition": "center 20%",
-      "titre": "L'analyse de vos habitudes",
-      "texte": "Votre quotidien, votre sommeil, votre alimentation, vos antécédents et ce qui a coincé les fois précédentes."
+      "titre": "Définition de vos objectifs",
+      "texte": "Ce que vous voulez vraiment obtenir, à quelle échéance, et ce qui compte le plus pour vous : forme, énergie, silhouette ou santé."
     },
     {
       "icone": "carte",
       "image": "assets/bilan-plan.jpg",
       "imagePosition": "center 35%",
-      "titre": "Votre plan d'action personnalisé",
-      "texte": "Construit à partir de vos objectifs et du temps que vous avez vraiment. Vous repartez avec, par écrit."
+      "titre": "Plan d'action",
+      "texte": "Construit à partir de vos objectifs, du temps que vous avez vraiment et de votre organisation personnelle."
     }
   ],
   "suite": {
@@ -86,40 +86,31 @@
       ]
     }
   },
+  "_hesitation_note": "Les 2 raisons détaillées de la section « Si vous hésitez encore ». paragraphes = liste de courts paragraphes. La conclusion (« Aucun risque ») et le bouton vivent dans textes.hesitation*.",
   "hesitation": [
-    {
-      "icone": "bouclier",
-      "titre": "Aucun risque",
-      "texte": "Une heure, aucun engagement, et vous repartez avec votre analyse et votre plan d'action, même si vous ne revenez pas."
-    },
     {
       "icone": "etiquette",
       "titre": "Pourquoi c'est gratuit",
-      "texte": "Ce bilan vaut habituellement {{offre.valeur}}. La façon la plus honnête de vous montrer notre méthode, c'est de l'appliquer à votre cas."
+      "paragraphes": [
+        "On est des professionnels de l'accompagnement, pas du marketing. Pas de discours agressif ni de promesses en l'air : on préfère vous convaincre par notre expertise et notre écoute, qui sont la base de tout accompagnement personnalisé.",
+        "En donnant le meilleur dès ce premier rendez-vous, on sait qu'une partie des personnes voudra continuer avec nous : en général, 2 à 3 sur 5. Vous restez libre de le faire ou non."
+      ]
     },
     {
       "icone": "horloge",
-      "titre": "Pourquoi {{offre.nbBilans}} par mois seulement",
-      "texte": "On accompagne très peu de personnes en coaching, pour apporter à chacune un maximum de valeur et de résultats. Les bilans suivent la même règle. En général, 2 à 3 personnes sur {{offre.nbBilans}} continuent ensuite avec nous."
+      "titre": "Pourquoi seulement {{offre.nbBilans}} bilans par mois",
+      "paragraphes": [
+        "Parce qu'un accompagnement personnalisé prend du temps. Avec 20 bilans par mois, la qualité de notre suivi et notre réputation en souffriraient.",
+        "On préfère accompagner peu de personnes, mais bien."
+      ]
     }
   ],
-  "atouts": [
-    {
-      "icone": "diplome",
-      "titre": "Un coach diplômé",
-      "texte": "Habitué aux personnes qui reprennent après des années d'arrêt."
-    },
-    {
-      "icone": "horloge",
-      "titre": "Des horaires souples",
-      "texte": "Tôt le matin, à midi ou en fin de journée."
-    },
-    {
-      "icone": "activite",
-      "titre": "Des mesures réelles",
-      "texte": "Composition corporelle et métabolisme, mesurés sur place."
-    }
-  ],
+  "_autorite_note": "Encart de chiffres clés, commun à tous les coachs. Chaque chiffre vide est masqué, l'encart entier disparaît si tout est vide. Le nombre et la note d'avis viennent de avis.nombre et avis.note. Uniquement des chiffres réels.",
+  "autorite": {
+    "anneesExperience": "",
+    "clientsAccompagnes": ""
+  },
+  "atouts": [],
   "faq": [
     {
       "question": "Je n'ai pas fait de sport depuis des années. C'est vraiment pour moi ?",
@@ -132,11 +123,11 @@
     },
     {
       "question": "Concrètement, il se passe quoi pendant l'heure ?",
-      "reponse": "Un échange sur vos habitudes et vos antécédents, puis des mesures faites sur place avec les outils du coach — composition corporelle, métabolisme, besoins — et enfin la construction de votre plan. Vous repartez avec vos chiffres et votre programme par écrit."
+      "reponse": "Un échange sur vos habitudes et vos antécédents, puis des mesures faites sur place avec les outils du coach (composition corporelle, métabolisme, besoins), et enfin la construction de votre plan. Vous repartez avec vos chiffres et votre programme par écrit."
     },
     {
-      "question": "Quels sont vos tarifs ?",
-      "reponse": "Ils dépendent du rythme et de la durée de l'accompagnement. Le coach vous donne un chiffre précis pendant le bilan, une fois qu'il connaît votre objectif et vos contraintes. Nos accompagnements démarrent généralement autour de 200 € par mois."
+      "question": "Quels sont vos tarifs si je veux me faire accompagner après le bilan ?",
+      "reponse": "Ils dépendent du rythme et de la durée de l'accompagnement. Le coach vous donne un chiffre précis pendant le bilan, une fois qu'il connaît votre objectif et vos contraintes."
     },
     {
       "question": "Je n'ai pas beaucoup de temps. C'est compatible ?",
@@ -147,7 +138,7 @@
       "reponse": "Dites-le pendant le bilan : c'est une information essentielle. Le coach en tient compte dans son analyse et dans le plan qu'il construit. C'est précisément ce qu'un programme générique ignore."
     },
     {
-      "question": "Et si j'ai un empêchement ?",
+      "question": "Et si j'ai un empêchement pour venir au bilan ?",
       "reponse": "Prévenez-nous au moins 24 heures avant et on décale sans problème. En revanche, un rendez-vous manqué sans prévenir ne pourra pas être reporté : les créneaux sont limités et d'autres personnes attendent."
     }
   ],
@@ -198,15 +189,21 @@
     "situationsTitre": "Le plus dur, ce n'est pas de commencer. C'est de tenir.",
     "situationsChapo": "Entre 30 et 45 ans, entre le travail et le quotidien, le sport a du mal à trouver sa place. Trois obstacles reviennent presque toujours.",
     "basculeHtml": "La réponse : un <span class=\"souligne\">accompagnement personnalisé</span>. Et tout commence par un bilan d'une heure.",
-    "derouleKicker": "Le bilan",
-    "derouleTitre": "Une heure, trois temps",
-    "derouleChapo": "Un rendez-vous physique avec {{coach.prenom}}, à la salle. Ni une séance de sport, ni une visite de la salle.",
-    "suiteKicker": "Après le bilan",
-    "suiteTitre": "Deux options. C'est vous qui choisissez.",
+    "_kickers_note": "Un kicker ou un chapo vide n'est pas affiché.",
+    "derouleKicker": "",
+    "derouleTitre": "Votre bilan en 3 étapes",
+    "derouleChapo": "",
+    "suiteKicker": "",
+    "suiteTitre": "Après le bilan, 2 options s'offrent à vous",
     "avisKicker": "Avis vérifiés",
     "avisTitre": "Ils ont fait le bilan avant vous",
-    "hesitationKicker": "Si vous hésitez encore",
-    "hesitationTitre": "C'est normal. Voici ce qu'il faut savoir.",
+    "hesitationKicker": "",
+    "hesitationTitreHtml": "Si vous hésitez encore, c'est normal. <span class=\"attenue\">Voici ce qu'il faut savoir.</span>",
+    "hesitationIntro": "Ce bilan est gratuit, mais rassurez-vous, il n'y a aucun piège.",
+    "hesitationConclusionTitre": "Aucun risque",
+    "hesitationConclusionTexte": "Si vous ne continuez pas après le bilan, on vous aura quand même aidé : c'est notre mission. Et vous en parlerez peut-être autour de vous.",
+    "hesitationQualification": "Le bilan est donc réservé aux personnes qui veulent vraiment changer.",
+    "hesitationCta": "Je veux vraiment changer",
     "lieuKicker": "Le lieu",
     "lieuTitre": "Où se passe le rendez-vous",
     "resaKicker": "Gratuit · 1 heure",

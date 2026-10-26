@@ -153,6 +153,23 @@ function enrichir(cfg, slug) {
     afficher: aDesAvis || aUnWidget
   });
 
+  // Encart d'autorité : seuls les chiffres renseignés s'affichent.
+  const autorite = cfg.autorite || {};
+  const annees = String(autorite.anneesExperience || '').trim();
+  const clients = String(autorite.clientsAccompagnes || '').trim();
+  const nbAvis = String(cfg.avis.nombre || '').trim();
+  const chiffres = [];
+  if (annees) chiffres.push({ valeur: annees, label: parseInt(annees, 10) === 1 ? "an d'expérience" : "ans d'expérience" });
+  if (clients) chiffres.push({ valeur: clients, label: 'clients accompagnés' });
+  if (nbAvis) {
+    chiffres.push({
+      valeur: nbAvis,
+      label: cfg.avis.note ? `avis Google, note ${cfg.avis.note}/5` : 'avis Google',
+      lien: cfg.avis.lienProfil || ''
+    });
+  }
+  cfg.autorite = Object.assign({}, autorite, { chiffres, afficher: chiffres.length > 0 });
+
   // Timecodes cumulés du protocole : "15 min" + "30 min" → 00:00 / 00:15 / 00:45
   let curseur = 0;
   const mm = (n) => `${String(Math.floor(n / 60)).padStart(2, '0')}:${String(n % 60).padStart(2, '0')}`;
@@ -241,7 +258,10 @@ function main() {
     if (!cfg.avis.aDesAvis) {
       avertissements.push(`  ${slug} — aucun avis dans config.avis.liste → section preuve sociale masquée`);
     }
-    const sansImage = cfg.etapes.map((e, i) => (e.image ? null : i + 1)).filter(Boolean);
+    if (!cfg.autorite.afficher) {
+      avertissements.push(`  ${slug} — encart d'autorité masqué (autorite.anneesExperience, autorite.clientsAccompagnes et avis.nombre vides)`);
+    }
+    const sansImage =cfg.etapes.map((e, i) => (e.image ? null : i + 1)).filter(Boolean);
     if (sansImage.length) {
       avertissements.push(`  ${slug} — bilan : temps ${sansImage.join(', ')} sans photo (etapes[].image) → pictogramme à la place`);
     }

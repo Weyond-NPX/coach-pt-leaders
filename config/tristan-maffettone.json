@@ -6,8 +6,8 @@
     "ville": "Saint-Égrève"
   },
   "salle": {
-    "nom": "REMPLACER — nom de la salle partenaire",
-    "adresse": "REMPLACER — numéro et rue",
+    "nom": "REMPLACER : nom de la salle partenaire",
+    "adresse": "REMPLACER : numéro et rue",
     "codePostal": "38120",
     "ville": "Saint-Égrève",
     "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher.",
@@ -17,7 +17,7 @@
     "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/REMPLACER_ID_GHL"
   },
   "meta": {
-    "titre": "Bilan forme offert à Saint-Égrève — Tristan Maffettone, coach sportif",
+    "titre": "Bilan forme offert à Saint-Égrève | Tristan Maffettone, coach sportif",
     "description": "Reprenez le sport sans bousculer vos semaines. Bilan offert d'une heure en face à face avec un coach sportif diplômé à Saint-Égrève. Vous repartez avec un plan d'action adapté."
   },
   "avis": {

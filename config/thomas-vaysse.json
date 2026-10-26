@@ -23,7 +23,7 @@
     "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/Y4n5PbhGpJmMCDw0kTP4"
   },
   "meta": {
-    "titre": "Bilan forme offert à Antibes — Thomas Vaysse, coach sportif",
+    "titre": "Bilan forme offert à Antibes | Thomas Vaysse, coach sportif",
     "description": "Reprenez le sport sans bousculer vos semaines. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit d'Antibes ou de Cannes Forville. Vous repartez avec un plan d'action adapté."
   },
   "avis": {
@@ -36,7 +36,7 @@
     "hero": "assets/portrait thomas vaysse.png"
   },
   "_avis_mode_emploi": [
-    "Copier ici de VRAIS avis de la fiche Google du coach — jamais d'avis inventés.",
+    "Copier ici de VRAIS avis de la fiche Google du coach, jamais d'avis inventés.",
     "Ouvrir la fiche Google Business → onglet Avis → copier texte, prénom, mois.",
     "Format attendu, 3 à 5 entrées :",
     {

@@ -3,8 +3,8 @@
     "Ce fichier n'est PAS généré (son nom commence par _). C'est un aide-mémoire.",
     "Il montre tout ce qu'un coach peut redéfinir pour lui seul.",
     "Règle : ce que vous écrivez ici écrase _defaults.json, uniquement pour ce coach.",
-    "Une liste (crochets []) est remplacée en entier — recopiez tous les éléments.",
-    "Un objet (accolades {}) est fusionné — vous ne mettez que les clés à changer."
+    "Une liste (crochets []) est remplacée en entier : recopiez tous les éléments.",
+    "Un objet (accolades {}) est fusionné : vous ne mettez que les clés à changer."
   ],
   "coach": {
     "prenom": "Prénom",
@@ -61,19 +61,19 @@
     {
       "icone": "userCheck",
       "image": "assets/rdv-table.jpg",
-      "titre": "Une heure en face à face",
+      "titre": "Analyse de vos habitudes",
       "texte": "…"
     },
     {
       "icone": "clipboard",
       "image": "assets/analyse.jpg",
-      "titre": "L'analyse de vos habitudes",
+      "titre": "Définition de vos objectifs",
       "texte": "…"
     },
     {
       "icone": "carte",
       "image": "assets/plan.jpg",
-      "titre": "Votre plan d'action personnalisé",
+      "titre": "Plan d'action",
       "texte": "…"
     }
   ],
