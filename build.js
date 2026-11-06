@@ -338,4 +338,13 @@ function main() {
       fs.copyFileSync(src, path.join(DIST, 'assets', path.basename(visuel)));
     }
   }
-  console.log('✓ /          →  dist/index.html  (annuaire des coach
+  console.log('✓ /          →  dist/index.html  (annuaire des coachs)');
+
+  if (avertissements.length) {
+    console.log('\nÀ vérifier avant mise en ligne :');
+    avertissements.forEach((a) => console.log(a));
+  }
+  console.log(`\n${liste.length} site(s) généré(s) dans dist/`);
+}
+
+main();

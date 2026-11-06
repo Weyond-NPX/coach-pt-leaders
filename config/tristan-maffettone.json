@@ -21,4 +21,14 @@
     "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit de Saint-Égrève. Vous repartez avec un plan d'action adapté."
   },
   "avis": {
-    "_note": "Pas de fiche Google pour ce coach : section avis 
+    "_note": "Pas de fiche Google pour ce coach : section avis désactivée.",
+    "desactive": true
+  },
+  "visuels": {
+    "hero": "assets/portrait-tristan-maffettone.jpeg"
+  },
+  "autorite": {
+    "anneesExperience": "5+",
+    "clientsAccompagnes": "200+"
+  }
+}
