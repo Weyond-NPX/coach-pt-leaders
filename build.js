@@ -143,6 +143,8 @@ function enrichir(cfg, slug) {
   cfg.lieuxMultiples = Array.isArray(cfg.lieuxSupplementaires) && cfg.lieuxSupplementaires.length > 0;
 
   const avis = cfg.avis || {};
+  // avis.desactive : le coach n'a pas de fiche Google → aucune mention d'avis sur la page.
+  if (avis.desactive) Object.assign(avis, { liste: [], widgetHtml: '', nombre: '', note: '', lienProfil: '' });
   const aDesAvis = Array.isArray(avis.liste) && avis.liste.length > 0;
   const aUnWidget = Boolean(avis.widgetHtml && String(avis.widgetHtml).trim());
   cfg.avis = Object.assign({}, avis, {
@@ -255,7 +257,7 @@ function main() {
     if (manquants.length) {
       avertissements.push(`  ${slug} — champs obligatoires manquants : ${manquants.join(', ')}`);
     }
-    if (!cfg.avis.aDesAvis) {
+    if (!cfg.avis.aDesAvis && !cfg.avis.desactive) {
       avertissements.push(`  ${slug} — aucun avis dans config.avis.liste → section preuve sociale masquée`);
     }
     if (!cfg.autorite.afficher) {
@@ -336,13 +338,4 @@ function main() {
       fs.copyFileSync(src, path.join(DIST, 'assets', path.basename(visuel)));
     }
   }
-  console.log('✓ /          →  dist/index.html  (annuaire des coachs)');
-
-  if (avertissements.length) {
-    console.log('\nÀ vérifier avant mise en ligne :');
-    avertissements.forEach((a) => console.log(a));
-  }
-  console.log(`\n${liste.length} site(s) généré(s) dans dist/`);
-}
-
-main();
+  console.log('✓ /          →  dist/index.html  (annuaire des coach
