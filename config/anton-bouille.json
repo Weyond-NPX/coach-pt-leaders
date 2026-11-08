@@ -1,0 +1,58 @@
+{
+  "_lisezmoi": "Config coach. Tout ce qui n'est pas ici est repris de _defaults.json.",
+  "coach": {
+    "prenom": "Anton",
+    "nom": "Bouille",
+    "ville": "Dijon"
+  },
+  "salle": {
+    "nom": "Basic-Fit Fontaine-lès-Dijon",
+    "adresse": "2 Rue des Arvernes",
+    "codePostal": "21000",
+    "ville": "Dijon",
+    "parking": "Parking gratuit sur place. Présentez-vous à l'accueil, votre coach vient vous chercher.",
+    "photo": "assets/basic-fit-fontaine-les-dijon.jpg"
+  },
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/aXBniZ2AnKnwmeh6fugx"
+  },
+  "meta": {
+    "titre": "Bilan forme offert à Dijon | Anton Bouille, coach sportif",
+    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit de Fontaine-lès-Dijon. Vous repartez avec un plan d'action adapté."
+  },
+  "avis": {
+    "note": "5,0",
+    "nombre": "78",
+    "lienProfil": "https://share.google/0yb6jE6KnxWN6JcYk",
+    "liste": [
+      {
+        "texte": "Après plusieurs années difficiles au niveau articulaire (arthrose, opérations de la hanche et du genou, et en prévision d'une prochaine prothèse de genou), souffrant par conséquent d'un sérieux déficit musculaire, j'ai entamé depuis 6 mois une \"reprise en main\" physique... Le coaching d'Anton, très personnalisé, adapté, évolutif et motivant, me permet de constater une amélioration que je n'aurais pas pu atteindre seul : les bons exercices, les bonnes postures, les bons mouvements... Sans parler des conseils \"environnementaux\" utiles : petits exercices à faire chez moi, alimentation etc... J'appréhende plus sereinement l'opération à venir et mon quotidien en général ! Merci Anton pour ton coaching bienveillant et surtout efficace !",
+        "auteur": "Jean Noël B.",
+        "initiale": "J",
+        "date": "juin 2026",
+        "note": "5"
+      },
+      {
+        "texte": "J'ai effectué une séance d'essai avec Anton et je suis particulièrement ravi de l'expérience ! Le rapport qualité-prix est tout simplement excellent. C'est un coach qui privilégie avant tout la qualité, et c'est précisément ce qui fait toute la différence avec les autres coachs sur Dijon. Très professionnel, compétent et bienveillant, il a pris le temps de cerner mes besoins. La séance s'est super bien passée, je le recommande les yeux fermés !",
+        "auteur": "Romain F.",
+        "initiale": "R",
+        "date": "août 2026",
+        "note": "5"
+      },
+      {
+        "texte": "Coaching de 9 Mois avec Anton, coatch bienveillant et à l’écoute. Il s’adapte à vos besoins et vos envies. Coaching à la salle et à la maison, les deux fonctionnent. Suivi et conseils nutritionnel mais surtout coaching mental!!! L’ensemble dans une bonne humeur simple et conviviale. Je recommande les yeux fermés. (Il m’avait été conseillé par ma kiné)",
+        "auteur": "Laurine F.",
+        "initiale": "L",
+        "date": "août 2026",
+        "note": "5"
+      }
+    ]
+  },
+  "autorite": {
+    "anneesExperience": "5+",
+    "clientsAccompagnes": "200+"
+  },
+  "visuels": {
+    "hero": "assets/portrait-anton-bouille.jpeg"
+  }
+}
