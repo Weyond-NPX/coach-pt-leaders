@@ -1,0 +1,34 @@
+{
+  "_lisezmoi": "Config coach. Tout ce qui n'est pas ici est repris de _defaults.json.",
+  "coach": {
+    "prenom": "Thomas",
+    "nom": "Blondy",
+    "ville": "Boulogne-Billancourt"
+  },
+  "salle": {
+    "nom": "Basic-Fit",
+    "adresse": "73-78 Rue de Sèvres",
+    "codePostal": "92100",
+    "ville": "Boulogne-Billancourt",
+    "parking": "",
+    "photo": "assets/basic-fit-boulogne-billancourt.jpg"
+  },
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/jt68QI5xeSW4FbYNiMU5"
+  },
+  "meta": {
+    "titre": "Bilan forme offert à Boulogne-Billancourt | Thomas Blondy, coach sportif",
+    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit de Boulogne-Billancourt. Vous repartez avec un plan d'action adapté."
+  },
+  "avis": {
+    "_note": "Pas de fiche Google pour ce coach : section avis désactivée.",
+    "desactive": true
+  },
+  "autorite": {
+    "_note": "Encart de chiffres clés désactivé pour ce coach.",
+    "desactive": true
+  },
+  "visuels": {
+    "hero": "assets/portrait-thomas-blondy.jpg"
+  }
+}

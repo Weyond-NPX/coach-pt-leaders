@@ -673,7 +673,7 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
       <div class="lieu-carte">
         {{#if salle.photo}}<img class="lieu-photo" src="{{salle.photo}}" alt="Entrée de la salle {{salle.nom}} à {{salle.ville}}" loading="lazy">{{else}}<span class="chip"><svg class="i"><use href="#i-pin"/></svg></span>{{/if}}
         <p class="adresse"><b>{{salle.nom}}</b>{{salle.adresseComplete}}</p>
-        <p class="pratique">{{salle.parking}}</p>
+        {{#if salle.parking}}<p class="pratique">{{salle.parking}}</p>{{/if}}
         <a class="lien-accent" href="{{salle.mapsLien}}" target="_blank" rel="noopener">Voir l'itinéraire <svg class="i" style="width:17px;height:17px"><use href="#i-fleche"/></svg></a>
       </div>
       <div class="map">

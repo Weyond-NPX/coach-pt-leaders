@@ -170,7 +170,8 @@ function enrichir(cfg, slug) {
       lien: cfg.avis.lienProfil || ''
     });
   }
-  cfg.autorite = Object.assign({}, autorite, { chiffres, afficher: chiffres.length > 0 });
+  // autorite.desactive : encart masqué volontairement, même si des chiffres existent.
+  cfg.autorite = Object.assign({}, autorite, { chiffres, afficher: !autorite.desactive && chiffres.length > 0 });
 
   // Timecodes cumulés du protocole : "15 min" + "30 min" → 00:00 / 00:15 / 00:45
   let curseur = 0;
@@ -260,7 +261,7 @@ function main() {
     if (!cfg.avis.aDesAvis && !cfg.avis.desactive) {
       avertissements.push(`  ${slug} — aucun avis dans config.avis.liste → section preuve sociale masquée`);
     }
-    if (!cfg.autorite.afficher) {
+    if (!cfg.autorite.afficher && !cfg.autorite.desactive) {
       avertissements.push(`  ${slug} — encart d'autorité masqué (autorite.anneesExperience, autorite.clientsAccompagnes et avis.nombre vides)`);
     }
     const sansImage =cfg.etapes.map((e, i) => (e.image ? null : i + 1)).filter(Boolean);
