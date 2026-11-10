@@ -1,0 +1,52 @@
+{
+  "_lisezmoi": "Config coach. Tout ce qui n'est pas ici est repris de _defaults.json.",
+  "coach": {
+    "prenom": "Thomas",
+    "nom": "Roels",
+    "ville": "Annecy"
+  },
+  "salle": {
+    "nom": "Basic-Fit",
+    "adresse": "134 Avenue de Genève",
+    "codePostal": "74000",
+    "ville": "Annecy",
+    "parking": "",
+    "photo": "assets/basic-fit-annecy.jpg"
+  },
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/UaorFfE3RrapeoQBsJqT"
+  },
+  "meta": {
+    "titre": "Bilan forme offert à Annecy | Thomas Roels, coach sportif",
+    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit d'Annecy. Vous repartez avec un plan d'action adapté."
+  },
+  "avis": {
+    "note": "",
+    "nombre": "",
+    "lienProfil": "https://maps.app.goo.gl/WMqXFXDHYPjATBKa9",
+    "liste": [
+      {
+        "texte": "J'ai commencé le coaching sportif avec des douleurs au dos et quelques gênes articulaires, et je vois une vraie amélioration depuis. Les séances sont adaptées, progressives et toujours faites en fonction de mes sensations. J'ai moins de douleurs au quotidien et je me sens plus solide physiquement. Le suivi est sérieux et rassurant, avec un vrai accompagnement. Je recommande pour reprendre le sport en toute confiance. Merci Thomas !",
+        "auteur": "A Kilkoo",
+        "initiale": "A",
+        "date": "mai 2026",
+        "note": "5"
+      },
+      {
+        "texte": "Merci à Thomas pour la qualité de son coaching aussi exigeant que bienveillant. Chacune de ses séances m'aide à me dépasser par ses activités variées, équilibrées voir originales ( boxe récemment 🤪)…et en plus il est très sympa et forme avec Manon un couple aussi sportif qu'attachant ! On prend presque plaisir à se faire mal ! …",
+        "auteur": "Jean Christophe T.",
+        "initiale": "J",
+        "date": "mars 2026",
+        "note": "5"
+      }
+    ],
+    "_note": "Avis recopiés des captures de la fiche Google (assets/originaux/avis-thomas-roels-*.png). L'avis de Margot Leiritz concerne Manon, pas Thomas : non repris. Note moyenne et nombre total à compléter."
+  },
+  "autorite": {
+    "anneesExperience": "2",
+    "clientsAccompagnes": "200"
+  },
+  "visuels": {
+    "hero": "assets/portrait-thomas-roels.jpg"
+  }
+}
