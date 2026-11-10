@@ -113,33 +113,25 @@
   "atouts": [],
   "faq": [
     {
-      "question": "Je n'ai pas fait de sport depuis des années. C'est vraiment pour moi ?",
-      "reponse": "C'est même le cas le plus fréquent. Et rassurez-vous : le bilan n'est pas une séance de sport. Vous n'avez rien à prouver, rien à soulever. On mesure simplement où vous en êtes aujourd'hui, et on part de là.",
+      "question": "Si on démarre un coaching ensemble, comment ça se passe ?",
+      "reponse": "On commence par faire le tour de la salle ensemble : le coach vous montre les espaces et les machines que vous allez utiliser, et vous explique comment tout fonctionne pour que vous soyez à l'aise dès le départ. Ensuite, il construit votre programme à partir de ce qui est ressorti du bilan. Viennent les séances encadrées, où il vous apprend les bons mouvements et ajuste selon votre forme du jour. Au fil des semaines, il suit vos progrès et fait évoluer le programme avec vous.",
       "ouvert": true
     },
     {
-      "question": "Est-ce que je vais devoir m'engager à la fin ?",
-      "reponse": "Non. À la fin du bilan, le coach vous explique ce qu'un accompagnement impliquerait dans votre cas : rythme, durée, budget. Vous pourrez ainsi choisir de continuer avec le coach ou d'essayer de votre côté."
+      "question": "Est-ce qu'il faut avoir un abonnement supplémentaire ?",
+      "reponse": "Oui, les séances ont lieu au {{salle.nom}}, il faut donc un abonnement à la salle. C'est une bonne opportunité : vous profitez d'un vrai cadre pour vous entraîner, avec tout l'équipement nécessaire, et vous pouvez aussi y venir entre deux séances. Le coaching, lui, n'est évidemment pas compris dans l'abonnement : c'est un accompagnement à part, avec votre coach."
     },
     {
-      "question": "Concrètement, il se passe quoi pendant l'heure ?",
-      "reponse": "Un échange sur vos habitudes et vos antécédents, puis des mesures faites sur place avec les outils du coach (composition corporelle, métabolisme, besoins), et enfin la construction de votre plan. Vous repartez avec vos chiffres et votre programme par écrit."
+      "question": "Est-ce que vous aurez quelque chose à me vendre à la fin ?",
+      "reponse": "À la fin du bilan, le coach vous présente ce qu'un accompagnement impliquerait dans votre cas : rythme, durée, budget. C'est une proposition, pas une obligation. Vous repartez avec votre plan quoi qu'il arrive, et vous êtes libre de continuer avec le coach ou de vous lancer de votre côté."
     },
     {
-      "question": "Quels sont vos tarifs si je veux me faire accompagner après le bilan ?",
-      "reponse": "Ils dépendent du rythme et de la durée de l'accompagnement. Le coach vous donne un chiffre précis pendant le bilan, une fois qu'il connaît votre objectif et vos contraintes."
+      "question": "C'est quoi les tarifs des coachings ?",
+      "reponse": "Ils dépendent du rythme et de la durée de l'accompagnement. Le coach vous donne un chiffre précis pendant le bilan, une fois qu'il connaît votre objectif, vos disponibilités et votre budget."
     },
     {
-      "question": "Je n'ai pas beaucoup de temps. C'est compatible ?",
-      "reponse": "Oui, et c'est justement ce que les mesures permettent de calibrer. La plupart de nos clients s'entraînent deux fois par semaine. Un plan à quatre séances qu'on ne tient pas vaut moins qu'un plan à deux séances qu'on tient six mois."
-    },
-    {
-      "question": "J'ai mal au dos, aux genoux, ou un antécédent médical.",
-      "reponse": "Dites-le pendant le bilan : c'est une information essentielle. Le coach en tient compte dans son analyse et dans le plan qu'il construit. C'est précisément ce qu'un programme générique ignore."
-    },
-    {
-      "question": "Et si j'ai un empêchement pour venir au bilan ?",
-      "reponse": "Prévenez-nous au moins 24 heures avant et on décale sans problème. En revanche, un rendez-vous manqué sans prévenir ne pourra pas être reporté : les créneaux sont limités et d'autres personnes attendent."
+      "question": "J'ai des douleurs articulaires ou des contre-indications médicales. Est-ce que le coaching peut s'adapter à moi ?",
+      "reponse": "Oui. Parlez-en dès le bilan : c'est une information essentielle. Le coach en tient compte dans son analyse et adapte les exercices, les charges et la progression à votre situation. Si vous suivez des recommandations de votre médecin ou de votre kiné, apportez-les : il construira votre programme en accord avec elles."
     }
   ],
   "visuels": {
