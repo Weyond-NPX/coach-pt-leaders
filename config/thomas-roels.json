@@ -33,6 +33,13 @@
         "note": "5"
       },
       {
+        "texte": "J'ai contacté Manon coach sportive à Annecy pour une perte de poids et une remise en forme. Les séances en salle sont ultra efficaces, bien encadrées et toujours adaptées à mon niveau. J'ai retrouvé la motivation, j'ai perdu du poids et je me sens beaucoup mieux. Le coaching est vraiment personnalisé, avec des exercices variés entre cardio et renforcement musculaire. Elle est très professionnelle, bienveillante, à l'écoute et sait exactement comment nous faire progresser sans pression. Je recommande sans hésiter !",
+        "auteur": "Margot L.",
+        "initiale": "M",
+        "date": "mai 2026",
+        "note": "5"
+      },
+      {
         "texte": "Merci à Thomas pour la qualité de son coaching aussi exigeant que bienveillant. Chacune de ses séances m'aide à me dépasser par ses activités variées, équilibrées voir originales ( boxe récemment 🤪)…et en plus il est très sympa et forme avec Manon un couple aussi sportif qu'attachant ! On prend presque plaisir à se faire mal ! …",
         "auteur": "Jean Christophe T.",
         "initiale": "J",
@@ -40,7 +47,7 @@
         "note": "5"
       }
     ],
-    "_note": "Avis recopiés des captures de la fiche Google (assets/originaux/avis-thomas-roels-*.png). L'avis de Margot Leiritz concerne Manon, pas Thomas : non repris. Note moyenne et nombre total à compléter."
+    "_note": "Avis recopiés des captures de la fiche Google (assets/originaux/avis-thomas-roels-*.png). Note moyenne et nombre total à compléter."
   },
   "autorite": {
     "anneesExperience": "2",
