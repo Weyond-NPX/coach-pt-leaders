@@ -1,0 +1,34 @@
+{
+  "_lisezmoi": "Config coach. Tout ce qui n'est pas ici est repris de _defaults.json.",
+  "coach": {
+    "prenom": "Corentin",
+    "nom": "Cousin",
+    "ville": "Orgeval"
+  },
+  "salle": {
+    "nom": "Basic-Fit",
+    "adresse": "2 Route de Quarante Sous",
+    "codePostal": "78630",
+    "ville": "Orgeval",
+    "parking": "",
+    "photo": "assets/basic-fit-orgeval.jpg"
+  },
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/NKY1BUXw80NuBR4H7pP6"
+  },
+  "meta": {
+    "titre": "Bilan forme offert à Orgeval | Corentin Cousin, coach sportif",
+    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit d'Orgeval. Vous repartez avec un plan d'action adapté."
+  },
+  "avis": {
+    "_note": "Pas de fiche Google pour ce coach : section avis désactivée.",
+    "desactive": true
+  },
+  "autorite": {
+    "anneesExperience": "6",
+    "clientsAccompagnes": "200"
+  },
+  "visuels": {
+    "hero": "assets/portrait-corentin-cousin.jpg"
+  }
+}
