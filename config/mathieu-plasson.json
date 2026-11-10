@@ -1,0 +1,58 @@
+{
+  "_lisezmoi": "Config coach. Tout ce qui n'est pas ici est repris de _defaults.json.",
+  "coach": {
+    "prenom": "Mathieu",
+    "nom": "Plasson",
+    "ville": "Lyon"
+  },
+  "salle": {
+    "nom": "Basic-Fit",
+    "adresse": "54B Rue Pierre Audry",
+    "codePostal": "69009",
+    "ville": "Lyon",
+    "parking": ""
+  },
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/8UGxDKOxWKbDVuYLJ9pE"
+  },
+  "meta": {
+    "titre": "Bilan forme offert à Lyon | Mathieu Plasson, coach sportif",
+    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit de Lyon 9. Vous repartez avec un plan d'action adapté."
+  },
+  "avis": {
+    "note": "",
+    "nombre": "",
+    "lienProfil": "https://maps.app.goo.gl/brwyYYpZvyN8b9Eq7",
+    "liste": [
+      {
+        "texte": "Coaché par Matthieu depuis bientôt 4 mois je suis extrêmement satisfait. Pour résumer : la meilleure décision sportive de ma vie. Je n'ai jamais aimé faire du sport. Pourtant, avec ce coaching j'ai pu m'appuyer sur la sympathie, l'enthousiasme et les compétences de Matthieu pour prendre le chemin de mes objectifs. Je me suis motivé et les résultats sont déjà là. Merci Matthieu",
+        "auteur": "Kévin P.",
+        "initiale": "K",
+        "date": "août 2026",
+        "note": "5"
+      },
+      {
+        "texte": "Si vous cherchez un coach qui sait à la fois vous faire progresser, vous motiver et vous supporter (oui, même quand vous avez un caractère bien trempé), alors foncez avec Mathieu ! Au-delà d'être un excellent coach, c'est quelqu'un de vraiment à l'écoute, toujours bienveillant, qui adapte ses séances à chacun et sait exactement comment pousser à donner le meilleur de soi, sans jamais mettre de pression inutile. Grâce à lui, on dépasse ses limites tout en gardant le sourire. Son professionnalisme, son énergie et sa bonne humeur font toute la différence. Merci pour ton accompagnement, ta patience (surtout) et ton investissement. Je recommande Mathieu les yeux fermés à tous ceux qui veulent un coach aussi compétent qu'humain !",
+        "auteur": "Eva F.",
+        "initiale": "E",
+        "date": "août 2026",
+        "note": "5"
+      },
+      {
+        "texte": "J'ai la chance de travailler avec Mathieu chaque semaine depuis plus de 3 ans. Mathieu est un coach très professionnel qui propose un accompagnement véritablement personnalisé et adapté aux objectifs que l'on se fixe. Il m'a notamment permis de me développer et de surmonter efficacement mes problèmes de genoux. Mais au-delà de sa maîtrise technique et sportive, ce qui différencie Mathieu ce sont ses qualités humaines. Toujours à l'écoute, toujours positif et dans l'encouragement. Je recommande sans réserve à toute personne qui souhaite progresser rapidement.",
+        "auteur": "Alain V.",
+        "initiale": "A",
+        "date": "fin 2025",
+        "note": "5"
+      }
+    ],
+    "_note": "Avis recopiés des captures de la fiche Google (assets/originaux/avis-mathieu-*.png). Note moyenne et nombre total à compléter."
+  },
+  "autorite": {
+    "anneesExperience": "2",
+    "clientsAccompagnes": "200"
+  },
+  "visuels": {
+    "hero": "assets/portrait-mathieu-plasson.jpg"
+  }
+}
