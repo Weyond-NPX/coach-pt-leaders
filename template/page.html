@@ -604,7 +604,7 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
       <div class="note">
         <span class="etoiles" aria-hidden="true">★★★★★</span>
         <strong>{{avis.note}}</strong>
-        <span>sur {{avis.nombre}} avis Google</span>
+        <span>{{#if avis.nombre}}sur {{avis.nombre}} avis Google{{else}}sur Google{{/if}}</span>
         {{#if avis.lienProfil}}<a href="{{avis.lienProfil}}" target="_blank" rel="noopener">Voir la fiche →</a>{{/if}}
       </div>
       {{/if}}
@@ -774,7 +774,7 @@ footer .logo-marque{display:block;height:34px;width:auto;margin-bottom:22px}
   "image":"{{visuels.hero}}",
   "url":"{{meta.url}}",
   "address":{"@type":"PostalAddress","streetAddress":"{{salle.adresse}}","postalCode":"{{salle.codePostal}}","addressLocality":"{{salle.ville}}","addressCountry":"FR"},
-  "areaServed":"{{coach.ville}}"{{#if avis.note}},
+  "areaServed":"{{coach.ville}}"{{#if avis.nombre}},
   "aggregateRating":{"@type":"AggregateRating","ratingValue":"{{avis.note}}","reviewCount":"{{avis.nombre}}"}{{/if}}
 }
 </script>

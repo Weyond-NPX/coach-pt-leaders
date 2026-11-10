@@ -21,7 +21,7 @@
     "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit d'Annecy. Vous repartez avec un plan d'action adapté."
   },
   "avis": {
-    "note": "",
+    "note": "5,0",
     "nombre": "",
     "lienProfil": "https://maps.app.goo.gl/WMqXFXDHYPjATBKa9",
     "liste": [
@@ -47,7 +47,7 @@
         "note": "5"
       }
     ],
-    "_note": "Avis recopiés des captures de la fiche Google (assets/originaux/avis-thomas-roels-*.png). Note moyenne et nombre total à compléter."
+    "_note": "Avis recopiés des captures de la fiche Google (assets/originaux/avis-thomas-roels-*.png). Nombre total d'avis à compléter."
   },
   "autorite": {
     "anneesExperience": "2",
