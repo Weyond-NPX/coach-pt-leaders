@@ -1,0 +1,59 @@
+{
+  "_lisezmoi": "Config coach. Tout ce qui n'est pas ici est repris de _defaults.json.",
+  "coach": {
+    "prenom": "Mathis",
+    "nom": "Chasseboeuf",
+    "ville": "Rennes"
+  },
+  "salle": {
+    "nom": "Basic-Fit",
+    "adresse": "8 Rue de la Donelière",
+    "codePostal": "35000",
+    "ville": "Rennes",
+    "parking": "",
+    "photo": "assets/basic-fit-rennes-saint-martin.jpg"
+  },
+  "calendrier": {
+    "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/ylUSAYgNaz2eycmUpQev"
+  },
+  "meta": {
+    "titre": "Bilan forme offert à Rennes | Mathis Chasseboeuf, coach sportif",
+    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit de Rennes Saint-Martin. Vous repartez avec un plan d'action adapté."
+  },
+  "avis": {
+    "_note": "Avis recopiés des captures de la fiche Google (assets/originaux/avis-mathis-*.png). Note moyenne et nombre total à compléter.",
+    "note": "",
+    "nombre": "",
+    "lienProfil": "https://share.google/tbE8u4vsaGVRwrCNl",
+    "liste": [
+      {
+        "texte": "Je recommande Mathis à 100% ! Il m'accompagne depuis maintenant 1 an et je ne peux que le remercier pour son professionnalisme. C'est un coach à l'écoute, bienveillant, patient et toujours encourageant. Il sait s'adapter à mes besoins, me motiver et me faire progresser dans une ambiance agréable. On sent qu'il est passionné par son métier et qu'il a à cœur d'accompagner ses clients vers leurs objectifs. Il mérite largement plus que 5 étoiles ! Merci encore pour ton accompagnement et ton investissement Mathis 🌟💪",
+        "auteur": "Anna B.",
+        "initiale": "A",
+        "date": "août 2026",
+        "note": "5"
+      },
+      {
+        "texte": "Mathis est un super coach. Il me permet de structurer mes séances avec un programme sérieux en fonction de mes attentes. Il gère aussi le côté nutritionnel avec les apports calorique adéquats. Durant les séances avec lui, il explique très professionnellement chaque exercices en montrant comment bien exécuter les différents mouvements. Il est également très disponible pour répondre à nos questions. Mathis est quelqu'un de très professionnel, et sérieux dans ce qu'il fait et propose, je recommande !!",
+        "auteur": "Cheekyyy",
+        "initiale": "C",
+        "date": "novembre 2026",
+        "note": "5"
+      },
+      {
+        "texte": "Mathis est une personne très professionnelle, bienveillante et toujours à l'écoute. Il sait mettre les gens en confiance grâce à sa patience, sa bonne humeur et son sérieux. C'est quelqu'un de passionné, investi et toujours prêt à aider les autres. Je le recommande à 100 %",
+        "auteur": "Jade B.",
+        "initiale": "J",
+        "date": "octobre 2026",
+        "note": "5"
+      }
+    ]
+  },
+  "autorite": {
+    "anneesExperience": "2",
+    "clientsAccompagnes": "200+"
+  },
+  "visuels": {
+    "hero": "assets/portrait-mathis-chasseboeuf.jpg"
+  }
+}
