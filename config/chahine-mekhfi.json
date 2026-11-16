@@ -3,22 +3,22 @@
   "coach": {
     "prenom": "Chahine",
     "nom": "Mekhfi",
-    "ville": "Levallois-Perret"
+    "ville": "Issy-les-Moulineaux"
   },
   "salle": {
     "nom": "Basic-Fit",
-    "adresse": "102 Avenue Jean-Jaurès",
-    "codePostal": "92300",
-    "ville": "Levallois-Perret",
+    "adresse": "65 Rue Camille Desmoulins",
+    "codePostal": "92130",
+    "ville": "Issy-les-Moulineaux",
     "parking": "",
-    "photo": "assets/basic-fit-levallois-perret.jpg"
+    "photo": "assets/basic-fit-issy-les-moulineaux.avif"
   },
   "calendrier": {
     "urlEmbed": "https://api.leadconnectorhq.com/widget/booking/0DPRPST01AkR0N0z1b8c"
   },
   "meta": {
-    "titre": "Bilan forme offert à Levallois-Perret | Chahine Mekhfi, coach sportif",
-    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit de Levallois-Perret. Vous repartez avec un plan d'action adapté."
+    "titre": "Bilan forme offert à Issy-les-Moulineaux | Chahine Mekhfi, coach sportif",
+    "description": "Faites du sport une habitude qui vous fait du bien, sans en faire une corvée, grâce à un programme taillé pour vous. Bilan offert d'une heure en face à face avec un coach sportif diplômé au Basic-Fit d'Issy-les-Moulineaux. Vous repartez avec un plan d'action adapté."
   },
   "avis": {
     "_note": "Pas de fiche Google pour ce coach : section avis désactivée.",
